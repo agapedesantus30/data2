@@ -1,0 +1,122 @@
+body
+	{background-color: #333333;
+    color: #ffffff;}
+img
+	{width: 200px;
+    transition: width 2s;}
+img:hover
+	{width: 400px;}
+video
+	{width: 300px;
+    height: 300px;}
+h1
+	{color: #ffffff;}
+h2
+	{width: 250px;
+    background-color: #993300;
+    color: #ffffff;
+    padding: 10px;
+    transition: width 2s;}
+h2:hover
+	{width: 800px;}
+nav
+	{height: 200px;
+    background-color: #00005d;
+    color: #ffffff;
+    letter-spacing: .1em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    display: block;}
+nav ul
+	{list-style: none;
+    margin: 0;}
+nav li
+	{display: inline-block;
+    padding: .5em;}
+nav a
+	{text-decoration: none;
+    display: block;}
+nav ul ul
+	{position: absolute;
+    background-color: #993300;
+    padding: 0;
+    text-align: left;
+    display: none;}
+nav ul ul li
+	{display: block;
+    border: 1px solid #00005d;
+    width: 8em;
+    padding-left: 1em;
+    margin-left: 0;}
+nav li:hover ul
+	{display: block;}
+nav a:link
+	{color: #ffffff;}
+nav a:visited
+	{color: #eaeaea;}
+nav a:hover
+	{color: #000000;}
+    
+#div1
+	{
+    width: 900px;
+    height: 100px;
+    color: #993300;
+    text-align: center;
+    font-size: 1.1em;
+    background-color: #ffffff;;
+    border: 5px solid white;
+    box-shadow: 5px 5px #993300, 10px 10px #ffffff, 15px 15px #ffffff, 20px 20px #993300,
+    25px 25px #ffffff, 30px 30px #ffffff, 35px 35px #993300;
+    transition: color 2s, background-color 2s, border 2s, box-shadow 2s;}
+#div1:hover
+	{color: #ffffff;;
+    background-color: #993300;
+    border: 5px dashed #ffffff;;}
+    
+#div2
+	{color: #ffffff;
+    transition: color 2s, font-size 2s, font-weight 2s;}
+#div2:hover
+	{color: #993300;
+    font-size: 1.1em;
+    font-weight: bold;}
+    
+#div3
+	{width: 200px;
+    padding: 20px 30px 0px 30px;
+    height: 200px;
+    color: #993300;
+    background-color: #ffffff;
+    transition: color 2s, background-color 2s, border-radius 2s;}
+#div3:hover
+	{border-radius: 100px;
+    color: #ffffff;
+    background-color: #993300;}
+
+#div5
+	{width: 100px;
+    height: 100px;
+    background-color: 993300;
+    position: relative;
+    animation: mymove 5s infinite;}
+@keyframes mymove {
+	0% {top: 0px; left: 0px; background-color: 993300;}
+    25% {top: 0px; left: 100px; background-color: blue;}
+    100% {top: 0px; left: 0px; background-color: red;}
+}
+
+#wrapper nav
+	{background: url(../Movie/fight.gif) repeat-x;}
+#wrapper
+    {width: 960px;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px black;
+  	border-width: 3px;
+    border-style: ridge;
+    border-color: #993300;
+    border-radius: 50px;
+    opacity: 20;}

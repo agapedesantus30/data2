@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Gallery</title>
+	<link href = "MyMovieGallery.css" rel = "stylesheet">
+</head>
+<body>
+<h1>Movie Gallery</h1>
+<ul>
+	<li><a href = " ../Movie/eren.jpg"><img src = ../Movie/eren.jpg>
+    <span><img class = "bigImage" src = ../Movie/eren2.jpg><br>Eren Yeager</span></a></li>
+    <li><a href = " ../Movie/mikasa.jpg"><img src = ../Movie/mikasa.jpg>
+    <span><img class = "bigImage" src = ../Movie/mikasa2.jpg><br>Mikasa Ackerman</span></a></li>
+    
+    <li><a href = " ../Movie/levi.jpg"><img src = ../Movie/levi.jpg>
+    <span><img class = "bigImage" src = ../Movie/levi2.jpg><br>Captain Levi</span></a></li>
+    <li><a href = " ../Movie/erwin.jpg"><img src = ../Movie/erwin.jpg>
+    <span><img class = "bigImage" src = ../Movie/erwin2.jpg><br>Erwin Smith</span></a></li>
+    
+    <li><a href = " ../Movie/annie.jpg"><img src = ../Movie/annie.jpg>
+    <span><img class = "bigImage" src = ../Movie/annie2.jpg><br>Annie Leonhart</span></a></li>
+    <li><a href = " ../Movie/reiner.jpg"><img src = ../Movie/reiner.jpg>
+    <span><img class = "bigImage" src = ../Movie/reiner2.jpg><br>Reiner Braun</span></a></li>
+</ul>
+<p>&nbsp;</p>
+<a class = "button" href = "MyMovie.html">Go Back</a>
+</body>
+</html>

@@ -1,0 +1,99 @@
+body 
+	{background-color:#000000;
+    color:#000000;
+    font-family: Georgia, "Times New Roman", serif;
+    /*background-image: url(../Images/dots.png);
+    background-repeat: repeat-x;*/
+    background: url(../Images/p2flower.jpg) repeat;}
+nav
+	{color: white;}
+h1
+   {font-family: Georgia, "Times New Roman", serif;
+   	font-size: 3em;
+    text-align: center;
+    line-height: 200%;
+   	color:#000000;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #FFD700;
+    background-image: url(../Images/Box.jpg);
+    border-radius: 50px;
+    opacity: 20;}
+h2
+	{font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 200%;
+	color:#000000;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #FFD700;
+    background-image: url(../Images/Box.jpg);
+    border-radius: 50px;
+    opacity: 20;}
+h3
+	{font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 200%;
+	color:#000000;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #FFD700;
+    background-image: url(../Images/Box.jpg);
+    border-radius: 50px;
+    opacity: 20;}
+ul li a 
+   {width: 140px;
+   padding: 0px;
+   
+   float: none;}
+ul li 
+   {margin: 0;
+   padding: 0;
+   text-decoration: none;
+   padding: 20px;
+   display: block;
+   border-bottom: 1px solid #ffffff;}
+ul li a:link 
+   {color: #000000;}
+ul li a:visited 
+   {color: #ff0000;}
+ul li a:hover 
+    {color: #0000ff;
+    background-color: #eaeaea;}
+dt 
+    {font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 200%;
+	color:#000000;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #FFD700;
+    background-image: url(../Images/Box.jpg);
+    border-radius: 50px;
+    opacity: 20;}
+.modDIV 
+	{text-align: center;
+    padding: 10px;
+    font-size: 0.8em;}
+footer
+	{font-size: 0.8em;
+    font-style: italic;
+    text-align: center;}
+#wrapper 
+    {width: 960px;
+    color: #000000;
+    background-color: #ffffcc;
+    text-align: center;
+    margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px #f8f8ff;
+  	border-width: 3px;
+    border-style: ridge;
+    border-color: #FFD700;
+    border-radius: 50px;
+    opacity: 20;}
+.red
+	{color: red;}

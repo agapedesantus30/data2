@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>My SQL</title>
+  
+  <link href = "MySql.css" rel = "stylesheet">
+  <link href = "../MySQL/m1.png" rel = "icon" type = "image/x-icon">
+  
+</head>
+<div id = "wrapper">
+<body>
+
+<header>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h3>Executive Summary</h3>
+    <h3>October 11, 2019</h3>
+</header>
+
+<main>
+	<h3>Executive Summary</h3>
+	<div><p>
+&nbsp This database contains certain ways in which a library keeps track of the on goings in its facility. 
+The database will be used to generate several reports. Using queries, we will be able to answer 
+questions that arise. We will do this by running the queries against the database which will in turn
+give us visual representations of the query. The implementation of the database contains 7 tables. 
+These tables provide information about our books, libraries, and customers. The database tables 
+include the following: Library, Collections, Books for sale, Books Checked out, Penalty, and Members.
+These tables represent the main entities of the application and contain links that define the 
+relationships between each entity. The information in the table Library includes the library ID, 
+the name of the library, the city, street, state and zip code the library resides in, the email 
+and phone number to contact the library and hours-of-operation. The purpose of library table is to 
+hold and describe our in-house libraries. Attributes defining collection are as follows: ID, title, 
+author, genre, page number, year published, publisher, and sale. The purpose of collection is to 
+describe the genre of books. Attributes defining books-for-sale are as follows: BFS-ID and price. 
+The purpose of this table is to describe books for sale. Attributes defining Books-Checked-out are: 
+BCD-ID, date-checked-out, date-to-be-returned and date-returned. The purpose of the table books 
+checked out is to keep track of the books checked out. Attributes defining Penalty are as follows: 
+penalty ID, and fee. This table is a product of books not returned on the proposed date when checked
+out. Lastly, we have the Members table. Attributes defining members table are as follows member ID, 
+first and last name, street, city, state, zip code, email, and phone. The purpose of this table is 
+to describe and keep track of the customers associated with this library.
+</p></div>
+<br><br>
+
+<!--
+<div>
+	<h3>Changes Made</h3>
+    <ul>
+    	<li>We took out the neighboring library table as that was redundant.</li>
+        <li>We made the relationship between Members table and Books for sale, and Members and 
+        Books check out both non identifying as they are both strong entities that can exist on its
+        own.</li>
+        <li>We added the column title to Books for sale and Books check out table as you need to 
+        know the name of the book sold and the book checked out.</li>
+    </ul>
+</div>
+<br><br>
+-->
+
+<div>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h2>DATABASE MODEL</h2>
+    <img src = "../MySQL/DataModel.png" >
+</div>
+<br><br>
+
+<div>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h2>SCHEMA</h2>
+    <ul>
+    <li>LIBRARY (Library ID, Name, City, Street, State, Zip Code, Email, Phone, Hours of 
+    Operation)</li>
+	<li>COLLECTIONS (ID, Title, Author, Genre, Page Numbers, Year Published, Publisher, Sale, 
+    Library ID)</li>FK Library ID --> LIBRARY
+	<li>MEMBERS (Member ID, First Name, Last Name, Street, City, Zip Code, Email, Phone)</li>
+	<li>BOOKS_FOR_SALE (BFS ID, Price, Title, Member ID)</li> FK Member ID --> MEMBERS
+	<li>BOOKS_CHECK_OUT (BCO ID, Date Checked Out, Date to be Returned, Date Returned, Title, 
+    Member ID)</li> FK Member ID --> MEMBERS
+	<li>PENALTY (Penalty ID, Fee, Type of Penalty, BCO ID)</li>FK BCO ID --> BOOKS_CHECK_OUT
+    </ul>
+</div>
+<br><br>
+
+<div>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h2>DATABASE DESIGN (ER DIAGRAM)</h2>
+    <img src = "../MySQL/DataDesign.png" >
+</div>
+<br><br>
+
+<div>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h2>SCHEMA</h2>
+    <ul>
+    	<li>LIBRARY (Library ID, Name, City, Street, State, Zip Code, Email, Phone, Hours of 
+        Operation)</li>
+		<li>COLLECTIONS (ID, Title, Author, Genre, Page Numbers, Year Published, Publisher, Sale, 
+        Library ID)</li> FK Library ID --> LIBRARY
+		<li>MEMBERS (Member ID, First Name, Last Name, Street, City, Zip Code, Email, Phone)</li>
+		<li>COLLECTONS_HAS_BOOKS_CHECK_OUT (Collections ID, Collections Library Library_ID, Books 
+        Check out BCO ID)</li> FK Collections ID --> COLLECTIONS <br>
+        FK Collections Library Library_ID --> COLLECTIONS <br>
+		FK Books Check out BCO ID --> BOOKS_CHECK OUT
+		<li>COLLECTIONS_HAS_BOOKS-FOR_SALE (Collections ID, Collections Library Library_ID, Books 
+        for sale BFS ID)<li>
+		FK Collections ID --> COLLECTIONS<br>
+		FK Collections Library Library_ID --> COLLECTIONS<br>
+		FK Books for sale BFS ID --> BOOKS_FOR_SALE<br>
+		<li>BOOKS_FOR_SALE (BFS ID, Price, Title, Member ID)</li>
+		FK Member ID --> MEMBERS
+		<li>BOOKS_CHECK_OUT (BCO ID, Date Checked Out, Date to be Returned, Date Returned, Title, 
+        Member ID)</li>
+		FK Member ID --> MEMBERS
+		<li>PENALTY (Penalty ID, Fee, Type of Penalty, BCO ID)</li>
+        FK BCO ID --> BOOKS_CHECK_OUT
+    </ul>
+    <p>They are more tables in the database design than the database model because when a many to 
+    many relationship is created in workbench it creates an intersecting table.</p>
+</div>
+<br><br>
+
+<div>
+	<h1>Detailed Description on relationships, cardinalities and identifiers for both database 
+    design and database model</h1>
+    <h3>Library and Collections</h3>
+    <ul>
+    	<li><b>Relationship:</b> the relationship between library and collections is one to many. 
+        This because collection can belong to only one library, while a library can have many 
+        collections. This is also an Identifying relationship because collection can’t exist 
+        without a library.</li>
+		<li><b>Cardinalities</b><br>
+		Library == The minimum cardinality here is one while the maximum is Many. <br>
+		Collections == The minimum cardinality here is one while the maximum is one.</li>
+		<li><b>Identifiers</b><br>
+		Library == Library-ID<br>
+		Collection == ID, Library-library-id</li>
+
+    </ul>
+    <h3>Collections and Books for Sale</h3>
+    <ul>
+    	<li><b>Relationship:</b> the relationship between collections and books-for-sale is many 
+        to many. This is because many books can be sold from many and a collection can have many 
+        books sold which belong to many collections. It is a non-Identifying relationship. This is 
+        because they are both strong entities meaning they can exist without the other. It also has 
+        an intersecting table collection-has-books-for-sale with its identifiers.</li>
+		<li><b>Cardinalities</b><br>
+		Collections: Minimum cardinality is one while maximum cardinality is one<br>
+		Collections-has-books-for-sale: Minimum cardinality is one while maximum cardinality is 
+        many<br>
+		Books-for-sale: Minimum cardinality is one and maximum cardinality is one.<br>
+		Collections-has-books-for-sale: Minimum cardinality is one while maximum cardinality is 
+        many</li>
+		<li><b>Identifiers</b><br>
+		Collections: ID, Library-library-id<br>
+		Books-for-sale: BFS-ID, Member-member-id<br>
+		Collections-has-books-for-sale: collection-id, collection-library-library-id, 
+        books-for-sale-BFS-id</li>
+
+    </ul>
+    
+    <h3>Collections and Books Checked out</h3>
+    <ul>
+    	<li><b>Relationship:</b> The relationship between collections and books-checked-out is 
+        many to many. This is because books can be checked out from many collections while many 
+        books checked out can belong to many collections. It is a non-identifying relationship 
+        because they are both strong entities meaning they can exist without the other.</li>
+		<li><b>Cardinalities</b><br>
+		Collection: Minimum cardinality is one while maximum cardinality is one<br>
+		Collections-has-books-check-out: Minimum cardinality is one while maximum cardinality is 
+        many<br>
+		Books-check-out: Minimum cardinality is one and maximum cardinality is one.<br>
+		Collections-has-books-check-out: Minimum cardinality is one while maximum cardinality is 
+        many<br>
+		<li><b>Identifiers</b><br>
+		Collections: ID, Library-library-id<br>
+		Books-check-out: BCO-ID, Members-member-id.<br>
+		Collections-has-books-check-out: collection-id, collection-library-library-id, 
+        books-check-BCO-id.</li>
+
+    </ul>
+    
+    <h3>Books Checked out and Penalty</h3>
+    <ul>
+    	<li><b>Relationship</b>
+		The relationship here is one to one. This is because a book returned on a wrong date will 
+        warrant a specific penalty, and panalties can only belong to a certain book checked out. 
+        This is an identifying relationship because penalty is a weak entity that depends on 
+        books-check-out.</li>
+		<li><b>Cardinalities</b><br>
+		Books-check-out: minimum cardinality one maximum many<br>
+		Penalty: minimum cardinality one maximum one.
+		<li><b>Identifiers</b><br>
+		Books-check-out: BCO-ID, Members-member-id<br>
+		Penalty: Penalty- id<br></li>
+    </ul>
+    
+    <h3>Books for Sale and Members</h3>
+    <ul>
+    	<li><b>Relationship:</b> the relationship between books for sale and member is one to many.
+        This is because one specific copy of a book can only be sold to one member, while a member 
+        can buy man books. It’s a non-identifying relationship this is because they are both strong 
+        entities meaning they can exist without the other.</li>
+		<li><b>Cardinalities</b><br>
+		Books-for-sale: minimum is one maximum one<br>
+		Members: minimum is one maximum many</li>
+		<li><b>Identifiers</b><br>
+		Books-for-sale: BFS-ID, Member-member-id<br>
+		Members: member-ID</li>
+    </ul>
+    
+    <h3>Books Checked out and Members</h3>
+    <ul>
+    	<li><b>Relationship:</b> the relationship between books checked out and members is one to 
+        many. This is because a book can only be checked out by one member while one member can 
+        check out many books. It’s a non-identifying relationship this is because they are both 
+        strong entities meaning they can exist without the other.</li>
+		<li><b>Cardinalities</b><br>
+		Books-check-out: minimum cardinality one maximum one<br>
+		Member: minimum cardinality one maximum many</li>
+		<li><b>Identifiers</b><br>
+		Books-check-out: BCO-ID, Members-member-id<br>
+		Members: member-ID</li>
+    </ul>
+    
+    <h3>CHANGES MADE FOR DELIVERABLE 2</h3>
+    <ul>
+    	<li>COLLECTIONS (ID, Title, Author, Genre, Page Numbers, Year Published, Publisher, Sale, 
+        Library ID)</li> FK Library ID --> LIBRARY
+        <li>Took out SALE column from collections table</li>
+		<li>Took out Type_of_Penalty column from Penalty table</li>
+		<li>Some data types were changed<br>
+			Hours of operation was changed from Date time to Varchar (50).<br>
+			Varchar datatypes in the database were changed from holding a value of 45 to 50, only 
+            the Title columns were increased to 80.<br>
+			Price was changed from decimal to decimal (15,2)<br>
+			Fee also was changed from decimal to decimal (15,2).</li>
+
+    </ul>
+    
+</div>
+<br><br>
+
+<div>
+	<h1>LEGACY LENDING LIBRARY</h1>
+    <h2>Table and Query Implementation (Deliverable 2)</h2>
+    <h3>Query 1</h3>
+    <p>This shows the name of our drama books from collections with page number more than 500 </p>
+    <img class = "smaller" src = "../MySQL/q1.PNG" >
+    
+    <h3>Query 2</h3>
+    <p>This shows our libraries sorted by their names in ascending order</p>
+    <img class = "smaller" src = "../MySQL/q2.PNG" >
+    
+    <h3>Query 3</h3>
+    <p>This query shows our most expensive book </p>
+    <img class = "smaller" src = "../MySQL/q3.PNG" >
+    
+    <h3>Query 4</h3>
+    <p>This shows the  id , phone numbers and name of members who bought a book priced over 
+	$9.00 and checked out a book in the year 2019 </p>
+    <img class = "smaller" src = "../MySQL/q4.PNG" >
+    
+    <h3>Query 5</h3>
+    <p>This query shows when books were due, when they were returned and the individuals who 
+    returned it.</p>
+    <img class = "smaller" src = "../MySQL/q5.PNG" >
+    
+    <h3>Query 6</h3>
+    <p>A Visual representation of our prices if we increased prices by $5.00 </p>
+    <img class = "smaller" src = "../MySQL/q6.PNG" >
+    
+    <h3>Query 7</h3>
+    <p>This shows the first name and last name of our members who checked out our books and who 
+    has the most of our books</p>
+    <img class = "smaller" src = "../MySQL/q7.PNG" >
+</div>
+<br><br>
+
+</main>
+<br>
+<!--
+<footer>
+	Copyright &copy; 2019 legacy lending library <br>
+    Webpage created by Agapitus Iboro<br>
+    <a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a> <br>
+</footer>
+-->
+
+</body>
+</div>
+</html>

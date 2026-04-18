@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="generator" content="AlterVista - Editor HTML"/>
+  	<title>My Site</title>
+  	<link href = "IndexCSS.css" rel = "stylesheet">
+    <link href = "../Images/MoveBall.gif" rel = "icon" type = "image/x-icon">
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1> Welcome to my Website! </h1>
+</header>
+
+<nav>
+    <a href = "../Projects/Index.html">Home</a> &nbsp; &nbsp;
+    <a href = "../Projects/Labs.html">Labs</a> &nbsp; &nbsp;
+	<a href = "../Projects/Projects.html">Projects</a>
+</nav>
+	<br>
+<main>
+<dl>
+	<dt>MY PROJECTS</dt> <br><br>
+    	<dd>Created <a class = "red" href = "../AndroidProject/Android.html"target = "_blank">
+        Mobile apps</a> using android and java code</dd><br>
+        <dd><a class = "red" href = "../MySQL/MySql.html"target = "_blank">My SQL Project</a> 
+        created to demonstrate a database’s development life cycle, from Analysis to the design 
+        stage and unto implementation.</dd><br>
+    	<dd>Created websites and web-pages using HTML 5,CSS 3, JavaScript 5, and php</dd><br>
+        <dd>Edited pictures, using Photoshop</dd><br>
+        <dd>Created objects, using Illustrator</dd><br>
+        <dd>Edited videos using Adobe Premiere Pro</dd><br>
+</dl>
+
+<h3>ITEC SKILLS</h3>
+<ul>
+	<li>Java</li>
+    <li>MySQL</li>
+    <li>SQL Server</li>
+    <li>T-SQL</li>
+    <li>Oracle</li>
+    <li>SQL</li>
+	<li>JavaScript</li>
+	<li>HTML</li>
+	<li>CSS</li>
+    <li>php</li>
+	<li>VM Ware</li>
+	<li>Photoshop</li>
+	<li>Cisco Packet Tracer</li>
+	<li>Android Studio</li>
+	<li>Android</li>
+	<li>XML</li>
+	<li>GitHub</li>
+	<li>SourceTree</li>
+	<li>Illustrator</li>
+</ul>
+
+<!--
+<h3>ITEC CLASSES TAKEN</h3>
+<ol>
+	<li>ITEC 1001 (Intro to Computing)</li>
+    <li>ITEC 2110 (Digital Media)</li>
+    <li>ITEC 2140 (Programming Fundamentals)</li>
+    <li>ITEC 2201 (Intro to Systems)</li>
+    <li>ITEC 2150 (Intermediate Programming)</li>
+    <li>ITEC 3100 (Introduction to Networks)</li>
+    <li>ITEC 3150 (Advanced Programming)</li>
+    <li>ITEC 3200 (Intro to Databases)</li>
+    <li>ITEC 3900 (Professional Practice & Ethics)</li>
+    <li>ITEC 4550 (Mobile Application Development)</li>
+</ol>
+-->
+
+<br><br><br><br>
+<!--
+<div class = "modDIV">
+	1000 university center ln, <br>
+    Lawrenceville, GA 30043 <br>
+    678-407-5000
+</div>
+</main>
+<footer>
+	Copyright &copy; 2019 GGC Web Technologies <br>
+    <a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a> <br>
+</footer>
+-->
+</div>
+</body>
+</html>

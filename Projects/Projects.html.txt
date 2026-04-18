@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Projects</title>
+  
+  <link href = "IndexCSS.css" rel = "stylesheet">
+  <link href = "../Images/MoveBall.gif" rel = "icon" type = "image/x-icon">
+  
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1> Projects </h1>
+</header>
+
+<nav>
+    <a href = "../Projects/Index.html">Home</a> &nbsp; &nbsp;
+    <a href = "../Projects/Labs.html">Labs</a> &nbsp; &nbsp;
+	<a href = "../Projects/Projects.html">Projects</a>
+</nav>
+<br>
+<main>
+<h2>List of Projects</h2>
+<ul style = "list-style-image: url(../Images/ggc.jpg);">
+<!--
+	<li><a href = "../Projects/Index.html">Index</a></li>
+-->
+    <li><a href = "../Projects/MyMovie.html">Movie</a></li>
+    <li><a href = "../Monaco/Monaco.html">Monaco</a></li>
+</ul>
+<!--
+<div class = "modDIV">
+	1000 university center <br>
+    Lawrenceville, GA 30043 <br>
+    678-407-5000 <br>
+</div>
+</main>
+<br>
+<footer>
+	Copyright &copy; 2019 GGC Web Technologies <br>
+    <a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a> <br>
+</footer>
+-->
+</div>
+</body>
+</html>

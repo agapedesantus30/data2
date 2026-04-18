@@ -1,0 +1,33 @@
+body 
+	{background: url(../Images/background.jpg);
+    color:#808080;}
+    
+h1 
+	{background: url(../Images/sunset.jpg)no-repeat right;
+	background-color:#000033;
+	color:#ffffff;
+    margin: auto;}
+    
+h3 {background-color:#ffffff;
+	color:#3399CC;}
+
+img {margin: auto;
+    width: 100%;
+    height: 100%;}
+    
+.smaller
+	{width: 50%;
+    height: 50%;}
+      
+#wrapper 
+    {width: 960px;
+    color:#666666;
+    background-color:#ffffff;
+    margin-left: auto;
+	margin-right: auto;
+	box-shadow: 3px 3px 3px #333333;}
+     
+footer 
+	{font-size: 0.8em;
+	font-style: italic;
+	text-align: center;}

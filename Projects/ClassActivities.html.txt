@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>ClassActivities</title>
+  
+  <link href = "IndexCSS.css" rel = "stylesheet">
+  <link href = "../Images/MoveBall.gif" rel = "icon" type = "image/x-icon">
+  
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1> ClassActivities </h1>
+</header>
+
+<nav>
+    <a href = "../Projects/Index.html">Home</a> &nbsp; &nbsp;
+    <a href = "../Projects/ClassActivities.html">ClassActivities</a> &nbsp; &nbsp;
+    <a href = "../Projects/Labs.html">Labs</a> &nbsp; &nbsp;
+	<a href = "../Projects/Projects.html">Projects</a>
+</nav>
+<br>
+<main>
+<h2>List of Class Activities</h2>
+<ul>
+	<li><a href = "../Activities/8-15.html">8-15 Personal Notes</a></li>
+    <li><a href = "../Activities/8-20.html">8-20 Simple HTML Page</a></li>
+    <li><a href = "../Activities/8-22.html">8-22 Simple HTML Website</a></li>
+    <li><a href = "../Activities/8-29.html">8-29 Simple HTML & CSS Website</a></li>
+    <li><a href = "../Activities/9-3.html">9-3 HTML & CSS Website</a></li>
+    <li><a href = "../Activities/9-5.html">9-5 More CSS</a></li>
+    <li><a href = "../Activities/9-10.html">9-10 Understanding page layout (Content, Padding, Border, and
+    Margins)</a></li>
+    <li><a href = "../Activities/9-19.html">9-19 Website with 3 columns</a></li>
+    <li><a href = "../Activities/9-19Gallery.html">9-19Gallery Images 1</a></li> 
+    <li><a href = "../Activities/9-24.html">9-24 Columns collapse into one when page is shrunk</a></li>
+    <li><a href = "../Activities/9-24Gallery.html">9-24Gallery Images 2</a></li>
+    <li><a href = "../Activities/9-24Grizzly.html">9-24Grizzly Change when page is shrunk</a></li>
+    <li><a href = "../Activities/9-26.html">9-26 A demo view into other websites from present website
+    and ads</a></li>
+    <li><a href = "../Activities/10-1.html">10-1 (Tables 1)</a></li>
+    <li><a href = "../Activities/10-3.html">10-3 (Tables 2)</a></li>
+    <li><a href = "../Activities/10-10.html">10-10 (Simple Sign-in page)</a></li>
+    <li><a href = "../Activities/10-15.html">10-15 (Registration form)</a></li>
+    <li><a href = "../Activities/10-17.html">10-17 (Gui Sign-in)</a></li>
+    <li><a href = "../Activities/10-22.html">10-22 (Survey page)</a></li>
+    <li><a href = "../Activities/10-24.html">10-24 (Animations 1)</a></li>
+    <li><a href = "../Activities/10-31.html">10-31 (Animations 2)</a></li>
+    <li><a href = "../Activities/10-31Gallery.html">10-31Gallery Images 3</a></li>
+    <li><a href = "../Activities/11-5.html">11-5 (JavaScript)</a></li>
+    <li><a href = "../Activities/11-12.html">11-12 (JavaScript with calculations)</a></li>
+    <li><a href = "../Activities/11-19.html">11-19 (JQuery)</a></li>
+    <li><a href = "../Activities/11-21.html">11-21 (Game)</a></li>
+    <li><a href = "../Activities/12-3.html">12-3 (Finished Gane)</a></li>
+</ul>
+<div class = "modDIV">
+	1000 university center <br>
+    Lawrenceville, GA 30043 <br>
+    678-407-5000 <br>
+</div>
+</main>
+<br>
+<footer>
+	Copyright &copy; 2019 GGC Web Technologies <br>
+    <a href = "mailto:aiboro@ggc.edu">aiboro@ggc.edu</a> <br>
+</footer>
+</div>
+</body>
+</html>

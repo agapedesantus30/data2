@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  	<meta name="generator" content="AlterVista - Editor HTML"/>
+  	<title>Movie Page</title>
+  	<link href = "MyMovie.css" rel = "stylesheet">
+    <link href = "../Images/MoveBall.gif" rel = "icon" type = "image/x-icon">
+</head>
+<body>
+<div id = "wrapper">
+
+<h1>Attack on Titan</h1>
+<nav>
+	<ul>
+    	<li><a href = "MyMovie.html">Home</a></li>
+        <li>Multimedia
+        <ul>
+        	<li><a a href = "#content">Movie Content</a></li>
+            <li><a a href = "#info">Detailed Information</a></li>
+            <li><a a href = "#review">Review</a></li>
+        	<li><a a href = "#poster">Movie Poster</a></li>
+            <li><a a href = "#music">Soundtrack</a></li>
+            <li><a a href = "#video">Movie Scene</a></li>
+        </ul>
+        </li>
+        <li><a href = "MyMovieGallery.html">Gallery</a></li>
+    </ul>
+</nav>
+<br><br>
+
+<h2 id = "content">Movie Content</h2>
+ 	<div id = "div1">Attack on Titan is a Japanese manga series both written and illustrated by 
+    Hajime Isayama. It is set in a fantasy world where humanity lives within territories surrounded 
+    by three enormous walls that protect them from gigantic man-eating humanoids referred to as 
+    Titans.</div><br><br><br>
+
+<h2 id = "info">Detailed Information</h2>
+	<div id = "div2">The series first began in Kodansha's Bessatsu Shōnen Magazine on September 9, 
+    2009, and it has been collected into 28 tankōbon volumes as of April 2019. Attack on Titan has 
+    become a critical and commercial success. As of April 2019, the manga has 90 million tankōbon 
+    copies in print worldwide (80 million in Japan and 10 million outside of Japan), making it one 
+    of the best-selling manga series. It has won several awards, including the Kodansha Manga Award,
+    Micheluzzi Awards, and Harvey Award.</div><br>
+
+<h2 id = "review">Review</h2>
+    <div id = "div3">I love the anime for its story line, it explores the mystery on what would
+    happen in a country that has had the truth hidden from it. I also love the animation, music, 
+    and voice acting</div><br>
+
+<h2 id = "poster">Movie Poster</h2>
+	<img src = "../Movie/poster.jpg">
+    <br><br>
+
+<h2 id = "music">Opening theme music</h2>
+	<audio autoplay ="autoplay" controls = "controls">
+    	<source src = "../Movie/theme.mp3" type = "audio/mpeg" >
+	</audio><br>
+    Downlaod the <a href = "../Movie/theme.mp3">music</a> (mp3)
+
+<h2 id = "video">Movie Scene <br>(Levi vs Beast Titan)</h2>
+	<video autoplay ="autoplay" controls = "controls">
+    	<source src = "../Movie/leviVSbeast.mp4" type = "video/mp4">
+    </video><br>
+    Downlaod the <a href = "../Movie/leviVSbeast.mp4">video</a> (mp4)<br><br>
+    
+</div>
+</body>
+</html>

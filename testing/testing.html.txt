@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Testing</title>
+  <link href = "../AndroidProject/andy.png" rel = "icon" type = "image/x-icon">
+
+<style>
+	body
+		{background-color: #333333;
+    	color: #ffffff;
+        height: 100px;}
+   	img 
+    	{width: 500px;
+        height: 450px;}
+    .blue
+    	{color: blue;}
+    nav
+		{color: #993300;
+    	letter-spacing: .1em;
+    	text-align: center;
+    	font-weight: bold;
+    	font-size: 1.5em;
+    	display: block;}
+	nav ul
+		{list-style: none;
+    	margin: 0;}
+	nav li
+		{display: inline-block;
+    	padding: .5em;}
+	nav a
+		{text-decoration: none;
+    	display: block;}
+	nav ul ul
+		{position: absolute;
+    	background-color: #ffffff;
+    	padding: 0;
+    	text-align: left;
+    	display: none;}
+	nav ul ul li
+		{display: block;
+    	border: 1px solid #00005d;
+    	width: 20em;
+    	padding-left: 1em;
+    	margin-left: 0;}
+	nav li:hover ul
+		{display: block;}
+	nav a:link
+		{color: #993300;}
+	nav a:visited
+		{color: #993300;}
+	nav a:hover
+		{color: #993300;}
+    
+    #location, #weather
+    	{display: none;}
+   	
+    #wrapper
+    	{width: 960px;
+    	text-align: center;
+    	margin-left: auto;
+		margin-right: auto;
+		box-shadow: 5px 5px 5px black;
+  		border-width: 3px;
+    	border-style: ridge;
+    	border-color: #993300;
+    	border-radius: 50px;
+    	opacity: 20;
+        background: url(../AndroidProject/andy.png) no-repeat right top,
+                    url(../AndroidProject/andy.png) no-repeat left bottom;
+        background-size: 100px, 100px;}
+        
+	.round
+		{text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;}
+    .round:hover
+    	{background-color: #ddd;
+  		color: black;}
+	.round
+    	{background-color: #993300;
+        border-radius: 50%;}
+        
+</style>
+
+</head>
+<body>
+<div id = "wrapper">
+
+<br>
+<p id = "top"></p>
+<h1>Testing</h1>
+<nav>
+	<ul>
+        <li>Projects
+        <ul>
+        <!--
+        	<li><a href = "../AndroidProject/Android.html">Student_Picker (Flutter)</a></li>
+        	<li><a href = "../Enhanced_Pizza_Party/Enhanced_Pizza_Party.html">Enhanced Pizza 
+            Party(Java)</a></li>
+            <li><a href = "../West_Hall_Map_App/West_Hall.html">West Hall Map App (Java)</a></li>
+            -->
+            
+        	<li><a href = "../Enhanced_Dice_Roller/Enhanced_Dice_Roller.html">Enhanced Dice 
+            Roller App (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments/Dice_Fragment.html">Dice Notation 
+            With Fragments (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments_with_Persistence/Dice_Persistence.html">
+            Dice Notation with Fragments with Persistence
+            (Java)</a></li>
+            <li><a href = "../Bounce_Surface_View_Gamification/Bounce_Surface.html">
+            BounceSurface View Gamification (Java)</a></li>
+            <li><a href = "../testing/testing.html">Testing Apps (Java)</a></li>
+        </ul>
+        </li>
+        <li>Objectives
+        <ul>
+        	<li><a a href = "#obj1">Objective 1</a></li>
+            <li><a a href = "#obj2">Objective 2</a></li>
+        </ul>
+        </li>
+    </ul>
+</nav>
+
+<div>
+<h2>About</h2>
+The purpose of the app is to create unit tests
+
+<h2 id = "obj1">Objective 1</h2>
+<ul>
+<li>check the validity of "4d10" and "4dx". Next, create a test that rolls "4d10" fifty times and 
+confirms that the result is between the proper minimum and maximum values.</li>
+<br>
+<img src = ../testing/t1.PNG></ul>
+<br><br><br>
+
+<h2 id = "obj2">Objective 2</h2>
+<ul>
+<li>Starting with the provided Palindrome app, create Espresso tests that check "aba" and "abc" 
+and validate the proper status of the "Is a Palindrome"/"Is NOT a Palindrome" TextView 
+and green/red images.</li>
+<br>
+<img src = ../testing/t2i.PNG>
+<br><br>
+<img src = ../testing/t2ii.PNG>
+</ul>
+<br><br><br>
+
+<a class = "blue" href= "#top">Back to top</a>
+<br><br><br><br><br>
+
+</div>
+</div>
+</body>
+</html>
