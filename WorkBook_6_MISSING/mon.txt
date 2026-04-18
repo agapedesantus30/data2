@@ -1,0 +1,17 @@
+MONITORING
+
+SYSTEM: RESOURCES (PROCESSOR (CPU), MEMORY (RAM), STORAGE (HARD DRIVE)
+NETWORK)
+I/O - INPUT/OUTPUT
+
+TOOLS: FOR INVESTIGATING
+TASK MANAGER
+PERFMON
+- counters
+Windows Logs
+logs on database administrator
+
+DATABASE:
+
+SPID every transaction has its own unique spid
+spid 1-50 are reserved for system processes
