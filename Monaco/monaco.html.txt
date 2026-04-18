@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Monaco</title>
+  <link href = "../Monaco/miconn.jpg" rel = "icon" type = "image/x-icon">
+
+<style>
+	body
+		{background-color: #333333;
+    	color: #ffffff;
+        height: 100px;}
+    .whtmore
+    	{color: white;}
+    nav
+		{color: #993300;
+    	letter-spacing: .1em;
+    	text-align: center;
+    	font-weight: bold;
+    	font-size: 1.5em;
+    	display: block;}
+	nav ul
+		{list-style: none;
+    	margin: 0;}
+	nav li
+		{display: inline-block;
+    	padding: .5em;}
+	nav a
+		{text-decoration: none;
+    	display: block;}
+	nav ul ul
+		{position: absolute;
+    	background-color: #ffffff;
+    	padding: 0;
+    	text-align: left;
+    	display: none;}
+	nav ul ul li
+		{display: block;
+    	border: 1px solid #00005d;
+    	width: 8em;
+    	padding-left: 1em;
+    	margin-left: 0;}
+	nav li:hover ul
+		{display: block;}
+	nav a:link
+		{color: #333333;}
+	nav a:visited
+		{color: #993300;}
+	nav a:hover
+		{color: #993300;}
+    
+    #location, #weather
+    	{display: none;}
+   	
+    #wrapper
+    	{width: 960px;
+    	text-align: center;
+    	margin-left: auto;
+		margin-right: auto;
+		box-shadow: 5px 5px 5px black;
+  		border-width: 3px;
+    	border-style: ridge;
+    	border-color: #993300;
+    	border-radius: 50px;
+    	opacity: 20;
+        background: url(../Monaco/map.png) no-repeat left top,
+                    url(../Monaco/map.png) no-repeat right bottom;
+        background-size: 100px, 100px;}
+        
+	button, .previous, .next, .round
+		{text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;}
+
+	button:hover
+    	{background-color: #ddd;
+  		color: black;}
+    .previous:hover
+    	{background-color: #ddd;
+  		color: black;}
+    .next:hover
+    	{background-color: #ddd;
+  		color: black;}
+    .round:hover
+    	{background-color: #ddd;
+  		color: black;}
+
+	button, .previous
+		{background-color: #993300;
+		color: black;}
+
+	button, .next
+    	{background-color: #993300;
+        color: white;}
+
+	.round
+    	{background-color: #993300;
+        border-radius: 50%;}
+        
+    #flip
+    	{text-align: center;
+        font-weight: bold;
+        color: #993300;
+        font-size: 1em;
+        border: 1px solid #333333;
+        background-color: #333333;}
+    #panel
+    	{height: 250px;
+
+        color: #ffffff;
+        font-size: 1em;
+        text-align: center;
+        font-weight: bold;}
+    .size
+    	{width: 170px;
+        height: 170px;}
+        
+</style>
+
+<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script>
+  	$(document).ready(function() {
+    	$("#more").click(function() {
+        	$("#location").fadeToggle(1000);
+        });
+
+    	$("#more2").click(function() {
+        	$("#weather").fadeToggle(1000);
+        });
+        
+        $("#flip").click(function() {
+        	$("#panel").slideToggle();
+        });
+        
+        $("#next").click(function() {
+        	$("#panel").slideToggle();
+        });
+	});
+    
+    var i = 0; 			// Start Point
+	var images = [];	// Images Array
+	var time = 3000;	// Time Between Switch
+	 
+	// Image List
+	images[0] = "../Monaco/im1.jpg";
+	images[1] = "../Monaco/im2.jpg";
+	images[2] = "../Monaco/im3.jpg";	
+	images[3] = "../Monaco/im4.jpg";
+	images[4] = "../Monaco/im5.jpg";
+
+	// Change Image
+	function changeImg(){
+		document.slide.src = images[i];
+        
+	// Check If Index Is Under Max
+	if(i < images.length - 1){
+	  // Add 1 to Index
+	  i++; 
+	} else { 
+		// Reset Back To O
+		i = 0;
+	}
+
+	// Run function every x seconds
+	setTimeout("changeImg()", time);
+}
+
+	// Run function when page loads
+	window.onload=changeImg;
+        
+</script>
+
+</head>
+<body>
+<div id = "wrapper">
+
+<br>
+<p id = "top"></p>
+<h1>Monaco</h1>
+<nav>
+	<ul>
+    	<li><a href = "Monaco.html">Home</a></li>
+        <li>Description
+        <ul>
+        	<li><a a href = "#h1">History & Location</a></li>
+            <li><a a href = "#w1">Weather</a></li>
+            <li><a a href = "#images">Images of Monaco</a></li>
+        	<li><a a href = "#fun">Fun Places</a></li>
+            <li><a a href = "#restaurant">Restaurants</a></li>
+        </ul>
+        </li>
+        <li><a href = "../Projects/Index.html">Main Page</a></li>
+    </ul>
+</nav>
+
+<div>
+<h2 id = "h1">History & Location</h2>
+<p>Monaco is a tiny independent city-state on France’s Mediterranean coastline known for its upscale
+casinos, yacht-lined harbor and prestigious Grand Prix motor race, which runs through Monaco’s 
+streets once a year. Monte-Carlo, its major district, is home to an elegant belle-époque casino 
+complex and ornate Salle Garnier opera house. It also has many luxe hotels, boutiques, nightclubs 
+and restaurants.
+<a class = "whtmore" href = "#" id = "more">more</a></p></div>
+
+<div id = "location"><p>
+High on a headland known as "the Rock" is Monaco-Ville’s old town, with its ramparts and imposing 
+Prince’s Palace, plus the grand Oceanographic Museum. This is the seat of the ruling Grimaldi 
+family, whose Prince Rainier III famously married American actress Grace Kelly in 1956 (their 
+graves can be visited at Monaco Cathedral). Below is La Condamine, the district containing the 
+ritzy Port Hercules. To the west is Fontvieille, a suburb that’s home to the AS Monaco football 
+club. On Monaco’s eastern edge is its public beach, the pebbled Larvotto. 
+</p></div>
+<br><br>
+
+<h2 id = "w1">Weather</h2>
+<div><p>
+Monaco has a mild climate throughout the year, the hottest months being july and August, and the 
+coolest being January and February. Rain mostly falls during the cooler winter months and there is 
+an average of 60 days' rain per year. 
+<a class = "whtmore" href = "#" id = "more2">more</a></p></div>
+
+<div id = "weather"><p>
+Lightweights are worn, with a warm warp for cooler summer evenings. Light to mediumweights are 
+advised for winter
+</p></div>
+<br><br>
+
+<h2 id ="images">Images of Monaco</h2>
+<img name="slide" width="400" height="200" /><br>
+<br><br>
+
+<h2 id ="fun">Fun Places to visit</h2>
+<div id = "flip">Click to Reveal/Hide</div>
+<div id="panel">
+    <figure>
+        <span><img class = "size" src="../Monaco/v1.jpg" alt="Photo" /></span>
+        <span><img class = "size" src="../Monaco/v2.jpg" alt="Photo" /></span>
+        <span><img class = "size" src="../Monaco/v3.jpg" alt="Photo" /></span>
+        <span><img class = "size" src="../Monaco/v4.jpg" alt="Photo" /></span>
+        <span><img class = "size" src="../Monaco/v5.jpg" alt="Photo" /> </span>
+    You could visit the harbour or attend the Grand Prix, take of tour of Stade Louis ll, home of 
+    A.S Monaco F.C, take a trip to the oceanographic museum of Monaco, or relax at Larvotto beach
+    </figure>
+</div>
+<br><br>
+
+<h2 id ="restaurant">Restaurants</h2>
+My top five restaurant recommendation:
+<ol>
+	<li>Restaurant Joel Robuchun MonteCarlo</li>
+	<li>Restaurant La Montgolfiere</li>
+    <li>ll Terrazzino</li>
+    <li>Yoshi</li>
+    <li>Blue Bay</li>
+</ol>
+
+<img id = "myImage" src = "../Monaco/r1.jpg" style = "width: 400px; height: 300px;"><br>
+<button id = "button" onclick = "document.getElementById('myImage').src = '../Monaco/r1.jpg'">
+1st</button>
+<button id = "button" onclick = "document.getElementById('myImage').src = '../Monaco/r2.jpg'">
+2nd</button>
+<button id = "button" onclick = "document.getElementById('myImage').src = '../Monaco/r3.jpg'">
+3rd</button>
+<button id = "button" onclick = "document.getElementById('myImage').src = '../Monaco/r4.jpg'">
+4th</button>
+<button id = "button" onclick = "document.getElementById('myImage').src = '../Monaco/r5.jpg'">
+5th</button>
+<br><br><br><br>
+
+<a class = "whtmore" href= "#top">Back to top</a>
+<br><br><br><br>
+
+</div>
+</body>
+</html>
