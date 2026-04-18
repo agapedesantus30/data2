@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Financing</title>
+</head>
+<body>
+
+<header>
+<h1> Prime Properties </h1>
+</header>
+
+<Nav>
+	<a href = "PrimeProjects.html" target = "_blank"> Home </a> &nbsp;&nbsp;
+    <a href = "listings.html" target = "_blank"> Listings</a> &nbsp;&nbsp;
+    <a href = "financing.html" target = "_blank"> Financing </a> &nbsp;&nbsp;
+    <a href = "contact.html" target = "_blank"> Contact </a>
+</Nav>
+
+<main>
+
+<h2> Financing </h2>
+<p>We work with many area mortgage and finance companies.</p>
+
+<h2> Mortgage FAQs </h2>
+	<dl><dt>What amount of mortgage do i qualify for ?</dt></dl>
+    	<dd>The total basic monthly housing cost is normally based on 29% to 41% of
+        your gross monthly income.</dd>
+	<dl><dt>Which percentage is most often used?</dt></dl>
+    	<dd>the percentage used depends on the lending institution and type of financing.
+        </dd>
+	<dl><dt>How do I get started?</dt></dl>
+    	<dd>contact us today to help you arrange financing for your home</dd>
+        <br>
+        
+<!--
+<footer>
+	<small><i>Copyright &copy; 2014 Prime Properties</i></small> <br>
+	<small><i><a href = "mailto:agapitus@iboro.com">agapitus@iboro.com</a></i></small> <br>
+</footer>
+-->
+</main>
+</body>
+</html>

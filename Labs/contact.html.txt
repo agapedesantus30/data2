@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Contacts</title>
+</head>
+<body>
+
+<header>
+<h1> Prime Properties </h1>
+</header>
+
+<Nav>
+	<a href = "PrimeProjects.html" target = "_blank"> Home </a> &nbsp;&nbsp;
+    <a href = "listings.html" target = "_blank"> Listings</a> &nbsp;&nbsp;
+    <a href = "financing.html" target = "_blank"> Financing </a> &nbsp;&nbsp;
+    <a href = "contact.html" target = "_blank"> Contact </a>
+</Nav>
+
+<main>
+
+<h2> Contacts </h2>
+<p>These are a list of our contacts</p>
+
+<ul>
+	<li>Mailing Adress: 3055 Bode Road SchaumburgIL 60194</li>
+    <li>Contact Phone Number: 845-555-5555</li>
+    <li>Email address: <small><i><a href = "mailto:PrimeProjects@gmail.com">
+    PrimeProjects@gmail.com</a></i></small></li> 
+    <li>Opening Hours: 8:00am - 10pm, M-F</li>
+</ul>
+
+<!--
+<footer>
+	<small><i>Copyright &copy; 2014 Prime Properties</i></small> <br>
+	<small><i><a href = "mailto:agapitus@iboro.com">agapitus@iboro.com</a></i></small> <br>
+</footer>
+-->
+
+</main>
+</body>
+</html>

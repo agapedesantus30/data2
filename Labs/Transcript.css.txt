@@ -1,0 +1,62 @@
+#imgC
+	{display: block;
+  	margin-left: auto;
+  	margin-right: auto;}
+h1
+	{text-align: center;}
+.centerHeading
+	{text-align: center;
+    background-color: #009900;}
+#GPA
+	{text-align: center;}
+#schedule
+	{border: 5px solid #004F00;
+    width: 80%;
+    height: 500px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;}
+td, th
+	{padding: 1em;
+    font-family: Arial, sans-serif;}
+caption
+	{font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;}
+.altrow
+	{background-color: #eaeaea;}
+#schedule tr:first-of-type
+	{background-color: #004F00;
+    color: #eaeaea;}
+#schedule tr:last-of-type
+	{background-color: #004F00;
+    color: #eaeaea;}
+#table2
+	{color: #ffffff;
+    background-color: #004F00;
+    border: 5px solid #004F00;
+    width: 80%;
+    height: 80px;
+    text-align: center;
+    border-collapse: collapse;
+    margin: auto;}
+#large
+	{background-image: url(../Images/ggcNew.png);
+    background-size: 100%;}
+#table3
+	{border-collapse: collapse;
+    text-align: center;
+    height: 400px;
+    border: 5px solid #000066;
+    margin: auto;
+    width: 600px;
+    background-color: #ADD8E6;}
+#table3 td, th
+	{border: 1px solid #000066;
+    padding: 0.5em;
+    font-family: Arial, sans-serif;}
+#table2 a
+	{color: #ffffff;}
+#bubbles
+	{background-image: url(../Images/dots.png);}

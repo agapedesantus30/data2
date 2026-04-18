@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Pacific Trails Report</title>
+  
+  <link href = "Pacific.css" rel = "stylesheet">
+  
+</head>
+<div id = "wrapper">
+<body>
+
+<header>
+	<h1> Pacific Trails Report </h1>
+</header>
+
+<nav>
+    <a href = "Pacific.html">Home</a> &nbsp; &nbsp;
+    <a href = "Yurts.html">Yurts</a> &nbsp; &nbsp;
+    <a href = "Activities.html">Activities</a> &nbsp; &nbsp;
+	<a href = "Reservations.html">Reservations</a>
+</nav>
+<figure>
+	<img src = "../Images/coast.jpg" >
+</figure>
+<main>
+<h2>&nbsp; Enjoy Nature in Luxury</h2>
+
+&nbsp; &nbsp;<span class = "pacific">Pacific Trails Resort </span> offers a special lodging experience on the
+california North Coast. Relax in serenity with panoramic views of the Pacific &nbsp; &nbsp;Ocean.
+
+<ul>
+	<li>Private yurts with decks overlooking the ocean</li>
+    <li>Activities lodge with fireplace and gift shop</li>
+    <li>Nightly fine dinning at the Overlook Cafe</li>
+    <li>Heateed outdoor pool and whirpool</li>
+    <li>guided hiking tours of the redwoods</li>
+</ul>
+&nbsp; &nbsp;<span class = "pacific">Pacific Trails Resort </span>
+<div>
+
+&nbsp; &nbsp; 54321 Peach road <br>
+&nbsp; &nbsp; Zephyr, CA 95555 <br><br>
+&nbsp; &nbsp; 888-555-5555 <br>
+
+</div>
+</main>
+<br>
+<!--
+<footer>
+	Copyright &copy; 2017 pacific trail Resort <br>
+    <a href = "mailto:agapitus@iboro.com">agapitus@iboro.com</a> <br>
+</footer>
+-->
+
+</div>
+</body>
+</html>

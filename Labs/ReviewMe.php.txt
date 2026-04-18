@@ -1,0 +1,45 @@
+<?php
+	echo "<h1>Thank you for taking the survey</h1>";
+    echo "<h2>Below are your answers to the survey questions</h2>";
+    
+    echo "<h3>Demographic Information</h3>";
+    	echo "Your Gender is: " .$_POST["genderTT"]. "<br><br>";
+    	echo "Your Age is: " .$_POST["ageTT"]. "<br><br>";
+    	echo "Your level is: " .$_POST["levelTT"]. "<br><br>";
+    	echo "Your school is: " .$_POST["schoolTT"]. "<br><br>";
+    
+    echo "<h3>Your security knowledge</h3>";
+    	echo "Your selected value is: " .$_POST["sat"]. "<br><br>";
+    
+    echo "<h3>Has your computer been infected</h3>";
+    	echo "Your answer is: " .$_POST["boolean"]. "<br><br>";
+    
+    echo "<h3>The antivirus you use</h3>";
+    echo "Your answer is <br>";
+    if(isset($_POST["norton"]) && $_POST["norton"] == "yes")
+    	echo "Norton ";
+    		if(isset($_POST["mcafee"]) && $_POST["mcafee"] == "yes")
+        	echo "McAfee ";
+    			if(isset($_POST["kasperski"]) && $_POST ["kasperski"] == "yes")
+        		echo "Kasperski ";
+                	if(isset($_POST["avg"]) && $_POST ["avg"] == "yes")
+        			echo "AVG ";
+                    	if(isset($_POST["avast"]) && $_POST ["avast"] == "yes")
+        				echo "Avast ";
+                       		if(isset($_POST["malware"]) && $_POST ["malware"] == "yes")
+        					echo "Malwarebytes ";
+                            	if(isset($_POST["bite"]) && $_POST ["bite"] == "yes")
+        							echo "Bitefender ";
+                       					if(isset($_POST["web"]) && $_POST ["web"] == "yes")
+        									echo "Webroot ";
+    											if(isset($_POST["micro"]) && $_POST["micro"] == "yes")
+        											echo "Trend Micro ";
+                									echo "<br>";
+    
+    echo "<h3>Your opinion on our questions</h3>";
+    	echo "Your answer for strong password: " .$_POST["firstQuestion"]. "<br><br>";
+        echo "Your answer on viruses: " .$_POST["secondQuestion"]. "<br><br>";
+        echo "Your answer on spyware: " .$_POST["thirdQuestion"]. "<br><br>";
+        echo "Your answer wireless Network: " .$_POST["fourthQuestion"]. "<br><br>";
+        echo "Your answer being able to protect yourself: " .$_POST["fifthQuestion"]. "<br><br>";
+?>

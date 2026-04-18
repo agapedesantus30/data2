@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Prime Properties</title>
+</head>
+<body>
+
+<header>
+<h1> Prime Properties </h1>
+</header>
+
+<Nav>
+	<a href = "PrimeProjects.html" target = "_blank"> Home </a> &nbsp;&nbsp;
+    <a href = "listings.html" target = "_blank"> Listings</a> &nbsp;&nbsp;
+    <a href = "financing.html" target = "_blank"> Financing </a> &nbsp;&nbsp;
+    <a href = "contact.html" target = "_blank"> Contact </a>
+</Nav>
+
+<main>
+
+<p><b><ins>Prime Projects</ins></b> is prepared to market and sell your property.</p>
+<p>The philosophy of Prime Projects is to promaote our clients, not ourselves.</p>
+<p>We can also help you find the property that meets you needs </p>
+
+<ul>
+	<li>Location</li>
+    <li>Price</li>
+    <li>Features</li>
+</ul>
+
+<!--
+<div>
+	Prime Properties <br>
+    3055 Bode Road <br>
+    Schaumburg, IL 60194 <br>
+    <br>
+    847-555-5555
+    <br>
+</div>
+<br>
+
+<footer>
+	<small><i>Copyright &copy; 2014 Prime Properties</i></small> <br>
+	<small><i><a href = "mailto:agapitus@iboro.com">agapitus@iboro.com</a></i></small> <br>
+</footer>
+-->
+
+</main>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Listings</title>
+</head>
+<body>
+
+<header>
+<h1> Prime Properties </h1>
+</header>
+
+<Nav>
+	<a href = "PrimeProjects.html" target = "_blank"> Home </a> &nbsp;&nbsp;
+    <a href = "listings.html" target = "_blank"> Listings</a> &nbsp;&nbsp;
+    <a href = "financing.html" target = "_blank"> Financing </a> &nbsp;&nbsp;
+    <a href = "contact.html" target = "_blank"> Contact </a>
+</Nav>
+
+<main>
+
+<h2> Listings </h2>
+<h2> Top houses on sale </h2>
+<p>These are the top 5 houses on sale. absed on different websites</p>
+
+<ul>
+	<li><a href = "https://www.homes.com/property/14817-n-calle-del-prado-fountain-hills-az-85268/
+    id-1000079529140/"target = "_blank"> Private House With Upgrades </a></li>
+    <ul>
+    	<li>Address: 14817 N Calle Del Prado, Fountain Hills, AZ 85268</li>
+    	<li>Square footage: </li>
+    	<li>Sale Price: $535,000</li>
+    </ul>
+    <li><a href = "https://www.homes.com/property/1211-rainmaker-tyler-tx-75703/id-1000016985764/"
+    target = "_blank"> House In Remington Park </a></li>
+    <ul>
+    	<li>Address: 1211 Rainmaker, Tyler, TX 75703</li>
+    	<li>Square footage: 2642 SqFt </li>
+    	<li>Sale Price: $369,900</li>
+    </ul>
+    <li><a href = "https://www.homes.com/property/4750-greencrest-way-palmdale-ca-93551/id-100005852685/"
+    target = "_blank"> House In Stratford Ranch </a></li>
+    <ul>
+    	<li>Address: 4750 Greencrest Way, Palmdale, CA 93551</li>
+    	<li>Square footage: 2322 SqFt </li>
+    	<li>Sale Price: $559,900</li>
+    </ul>
+    <li><a href = "https://www.homes.com/property/310-plainville-dr-westfield-in-46074/id-600034391598/"
+    target = "_blank"> House In Countryside </a></li>
+    <ul>
+    	<li>Address: 310 Plainville Drive, Westfield, IN 46074 </li>
+    	<li>Square footage: 3739 SqFt </li>
+    	<li>Sale Price: $310,000 </li>
+    </ul>
+    <li><a href = "https://www.homes.com/property/5317-b-st-se-washington-dc-20019/id-400012087977/"
+    target = "_blank"> House In Marshall Heights </a></li>
+    <ul>
+    	<li>Address: 5317 B St Se, Washington, DC 20019</li>
+    	<li>Square footage: 2240 SqFt </li>
+    	<li>Sale Price: $499,000</li>
+    </ul>
+</ul>    
+
+<!--
+<footer>
+	<small><i>Copyright &copy; 2014 Prime Properties</i></small> <br>
+	<small><i><a href = "mailto:agapitus@iboro.com">agapitus@iboro.com</a></i></small> <br>
+</footer>
+-->
+
+</main>
+</body>
+</html>
