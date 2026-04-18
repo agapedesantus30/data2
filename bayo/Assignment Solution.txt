@@ -1,0 +1,137 @@
+-- HOMEWORK 1
+ 
+Select animal_name as Name, animal_age as Age, arrival_date as Date
+from animal
+where animal_gender like 'F'
+Order by animal_name Asc;
+commit;
+-- Homework 2
+
+ Select animal_id, animal_name
+from animal
+where arrival_date like '2018-01-02';
+commit;
+
+
+-- Homework 3
+
+ Select animal_id, animal_name
+from animal
+where breed_id = 10
+order by animal_id;
+commit;
+-- Homework 4
+ select CONCAT(vol_first," " ,vol_last) AS Coco_Volunteer
+from volunteer inner join animal
+on volunteer.vol_id = animal.vol_id
+where animal.animal_name like 'Co%';
+commit;
+-- Homework 5
+ select animal.animal_name, breed.breed_name, (male_lo_weight + female_lo_weight)/2 average_low_weight,
+	(male_hi_weight + female_hi_weight)/2 average_High_weight
+from animal inner join breed
+on animal.breed_id = breed.breed_id
+order by average_high_weight desc;
+commit;
+-- homework 6
+ use animalshelter;
+select concat(adopter_first, " " , adopter_last, " Wishes for a ", breed_name ," age ", desired_age ) as Wishlist
+from adopter inner join wishlist
+on adopter.adopter_id = wishlist.adopter_id
+inner join breed
+on breed.breed_id = wishlist.desired_breed;
+commit;
+-- homework 7
+ use animalshelter;
+SELECT count('vol_id') As Number_of_Volunteers
+FROM volunteer;commit; 
+-- homework 8
+ use animalshelter;
+SELECT breed_type as Category, max(male_hi_weight) as Largest_Male_Weigth, max(female_hi_weight) as Largest_Female_Weigth
+FROM breed
+where breed_type = 'cat'
+union
+SELECT breed_type as Category, max(male_hi_weight) as Largest_Male_Weigth, max(female_hi_weight) as Largest_Female_Weigth
+FROM breed
+where breed_type = 'bird'
+union
+SELECT breed_type as Category, max(male_hi_weight) as Largest_Male_Weigth, max(female_hi_weight) as Largest_Female_Weigth
+FROM breed
+where breed_type = 'dog'
+order by category asc;
+commit;
+-- homeowrk 9
+ use fitness;
+select client_id, concat(c_first, c_last) as Client_Name
+from client
+where c_zip like 78103
+order by client_id asc;
+commit;
+-- homework 10 
+use fitness;
+(select workout_type as Group_G_or_Personal_P, avg(workout_length)
+from workout
+where workout_type = 'G')
+union
+(select workout_type as Group_G_or_Personal_P, avg(workout_length)
+from workout
+where workout_type = 'P');
+commit;
+
+-- Part 2
+
+-- homework 1 
+use fitness;
+UPDATE trainer
+SET train_city = 'Canyon Lake'
+WHERE train_id = 1;
+commit;
+
+
+-- homework 2
+ use fitness;
+select *
+from trainer
+where train_id = 1;
+commit;
+
+-- homework 3
+ UPDATE trainer
+SET salary = 30
+WHERE salary < 25;
+commit;
+-- homework 4
+ select train_first, train_last, salary
+from trainer;
+commit;
+-- homeowrk 5
+ Insert into group_class values (50, 'Zumba',600);commit;
+-- homework 6
+ Select group_id, className, calories_burned
+from group_class;
+commit;
+-- homework 7
+ Insert into client values (200, 'Lionel', 'Messi', ' 104 davis st', 'Atlanta', 'Ga', '30308', '8888887777', 5, 5, 167, 4);
+commit;
+-- homework 8
+ select *
+from client;
+commit;
+-- homwork 9
+ delete from client
+where client_id = 200;
+commit;
+
+
+-- homework 10 
+select *
+from client;
+commit;
+-- homework 11 use fitness;
+SELECT CONCAT(c_last," " ,c_first) AS Person, CONCAT(c_city, " " ,c_state, " " ,c_zip) As Location, 'Client' as Category
+FROM client
+UNION
+SELECT CONCAT(train_last, " " ,train_first) As Person, CONCAT( train_city, " " , train_state, " " ,train_zip) As Location, 'Trainer' as Category
+FROM trainer
+ORDER BY Person asc;
+commit;
