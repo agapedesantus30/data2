@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>8-20</title>
+</head>
+<body>
+
+<h1>Welcome to the future of education.Your education.</h1>
+
+<del>A few</del> 14 years ago, <i><b>Georgia Gwinnett College</b></i> was home to just over <small> 100 
+</small> students.Let’s just say – things have changed. What was once 260 acres of rolling terrain has 
+become the perfect metropolitan college campus of about <big> 12,000 </big> students.<blockquote><b>What’s 
+so perfect about it?</b><i> GGC adapts to how you do things – your learning style,your work schedule and your life.</i></blockquote>
+From the ground up, <em>GGC</em> was designed to help you <ins>succeed</ins>. That's <mark>game changing.
+</mark>
+
+<h2>GGc Schools</h2>
+
+<ul>
+	<li>Schools of libral Arts</li>
+    
+    	<ol type = "i">
+        	<li>English</li>
+            <li>History</li>
+            <li>Phycology</li>
+        </ol>
+    
+    <li>Schools of Education</li>
+    
+    	<ol type = "a">
+        	<li>Accounting</li>
+            <li>Finance</li>
+            <li>Management</li>
+        </ol>
+    
+    <li>Schools of Business</li>
+    
+    	<ol>
+        	<li>Early chilhood Education</li>
+            <li>Special Education</li>
+        </ol>
+    
+    <li><a href = "https://www.ggc.edu/academics/schools/school-of-science-and-technology/">
+    Schools of Science and Technology</a></li>
+    
+    <ul>
+    	<li>Biology</li>
+    	<li>Chemistry</li>
+    	<li>ITEC</li>
+        
+        	<ul>
+    			<li>Software Development</li>
+    			<li>System and Security</li>
+    			<li>Digital Media</li>
+    			<li>Enterprise Systems</li>
+                <li>Data Analytics</li>
+    		</ul>
+        
+    	<li>MATH</li>
+    </ul>
+    
+</ul>
+
+<h2><mark>GGC</mark></h2>
+<ul style = "list-style-image: url(../Images/ggc.jpg);">
+	<li> 17 Programs of Study</li>
+    <li> 45+ Concentration of Study</li>
+    <li> 21 Average Class Size</li>
+</ul>
+
+</body>
+</html>

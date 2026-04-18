@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>11-5</title>
+</head>
+<body>
+
+<script>
+	alert("Welcome to Javascript!");
+</script>
+
+<script>
+	document.write("<h1>Javascript 101</h1>");
+    document.write("<h2>Is Javascript the same as java</h2>");
+</script>
+
+<button onclick = "yesButton()">Yes</button>
+<script>
+	function yesButton() {
+    	alert("No, they're different");
+    }
+</script>
+
+<button onclick = "noButton()">No</button>
+<script>
+	function noButton() {
+    	alert("Yes your correct");
+    }
+</script>
+<br>
+
+<h2>Sample codes:</h2>
+<img id = "myImage" src = "../Images/JavaScript.jpg" style = "width: 300px; height: 200px;"><br>
+<button onclick = "document.getElementById('myImage').src = '../Images/JavaScript.jpg'">JavaScript</button>
+<button onclick = "document.getElementById('myImage').src = '../Images/Java.png'">Java</button>
+
+<h2>Handle Events</h2>
+<p><a href = "#" onmouseover = "alert('Yes!');">Do you know Java programming? (Mouse over to see)</a></p>
+<p><a href = "#" onmouseout = "alert('Start learning it');">Do you know JavaScript? (Mouse out to see)</a></p>
+
+<img onmouseover = "bigImg(this)" onmouseout = "normalImg(this)" src = "../Images/tryJavaScript.jpg">
+<script>
+	function bigImg(x) {
+    	x.style.width = "440px";
+        x.style.height = "520px";
+        x.style.transition = "width 2s, height 2s";
+    }
+    
+    function normalImg(x) {
+    	x.style.width = "220px";
+        x.style.height = "260px";
+        x.style.transition = "width 2s, height 2s";
+    }
+</script>
+
+<h2 id = "easy">JavaScript is easy!</h2>
+<script>
+	document.getElementById("easy").onmouseover = function(){mouseOver();};
+    	document.getElementById("easy").onmouseout = function(){mouseOut();};
+        
+    function mouseOver() {
+    	document.getElementById("easy").style.color = "red";
+    }
+    
+    function mouseOut() {
+    	document.getElementById("easy").style.color = "blue";
+    }
+</script>
+
+	<h3>This page was last modified on:
+    	<script>
+    		document.write(document.lastModified);
+        </script>
+    </h3>
+
+</body>
+</html>

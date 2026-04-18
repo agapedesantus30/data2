@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>8-22</title>
+</head>
+<body>
+
+<header>
+	<h1>GGC Media Design</h1>
+</header>
+
+<nav>
+	<b>
+    	<a href = "8-22.html">Home</a> &nbsp; &nbsp;
+    	<a href = "8-22Projects.html">Projects</a> &nbsp; &nbsp;
+    	<a href = "8-22Teams.html">Service Teams</a> &nbsp; &nbsp;
+		<a href = "8-22Contacts.html">Contacts</a>
+    </b>
+</nav>
+
+<main>
+<h2>New Media &amp; Web Design</h2>
+<p>GGC Media Design will bring your company's web presence to the next level. We offer a comprehensive range of 
+services</p>
+
+<h2>Our Services Meet Your Business Needs</h2>
+<dl>
+	<dt><b>Website Design</b></dt>
+    	<dd>Whether your needs are large or small, we can get you on the web!</dd>
+	<dt><b>E-Commerce Solutions</b></dt>
+    	<dd>We offer quick entry into the e-commerce marketplace.</dd>
+	<dt><b>Search Engine Optimization</b></dt>
+    	<dd>We will get your website noticed by:</dd>
+        <ul style = list-style-position:inside>
+        	<li><a href = "https://www.google.com/" target = "_blank">Google</a></li>
+            <li><a href = "https://www.bing.com/" target = "_blank">Bing</a></li>
+            <li><a href = "https://uk.search.yahoo.com/" target = "_blank">Yahoo</a></li>
+        </ul>
+</dl>
+<div>
+	54321 Peach road <br>
+    Lawrenceville, Ga 30046 <br>
+    <b><i>888-555-5555</i></b> <br>
+</div>
+<br>
+<footer>
+	<small><i>Copyright &copy; 2019 GGC Media Design</i></small> <br>
+    <small><i><a href = "mailto:Contact@ggcmedia.com">Contact@ggcmedia.com</a></i></small> <br>
+</footer>
+</main>
+</body>
+</html>

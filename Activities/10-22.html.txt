@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <style>
+  	td, th
+	{border: 1px solid #000066;
+    padding: 0.5em;
+    font-family: Arial, sans-serif;}
+  </style>
+  <title>10-22</title>
+</head>
+<body>
+
+<h2>We want to know you better. Please take the following survey</h2>
+<form method = "post" action = "10-22.php" 
+	oninput = "meters.value = parseInt(feet.value)*0.3 + parseInt(inches.value)*0.025">
+
+	<h3>Your favorite web site:</h3>
+		<label for = "website">Website:</label>
+		<input type = "url" id = "website" name = "web"><br>
+
+	<h3>Your favorite color:</h3>
+        <label for = "color">Favorite color:</label>
+		<input type = "text" id = "color" list = "colorList" name = "col"><br>
+        <datalist id = "colorList">
+        	<option value = "red" label = "red">
+            <option value = "blue" label = "blue">
+            <option value = "green" label = "green">
+            <option value = "yellow" label = "yellow">
+        </datalist><br>
+        
+	<h3>Your least favorite color</h3>
+        <label for = "nocolor">Choose a color:</label>
+		<input type = "color" id = "nocolor" list = "colorList" name = "leastcol"><br>
+
+	<h3>Your favorite day</h3>
+    	<label for = "day">Choose a day:</label>
+		<input type = "date" id = "day" name = "dy"><br>
+        
+    <h3>Your lucky number from 0 to 10:</h3>
+    	<label for = "num">Choose a Number:</label>
+		<input type = "number" id = "num" min = 0 max = 10 name = "no"><br>
+        
+    <h3>Your height:</h3>
+		<input type = "number" id = "feet" name = "feet" min = 0 max = 10 value = "5"> feet
+        <input type = "number" id = "inches" name = "inches" min = 0 max = 11 value = "6"> inches
+        =
+        <output name = "meters" for = "feet inches"></output> meters<br>
+        
+    <h3>Your satisfaction with this web site:</h3>
+    	<label for = "val">Choose a value between 1 and 100:</label><br>
+		1 <input type = "range" id = "val" min = 1 max = 100 name = "sat"> 100<br>
+        
+    <h3>your opinion about classes:</h3>
+    <table>
+    <tr>
+    	<td>I like the classes starting at 8am:</td>
+		<td><label><input type = "radio" id = "Agree" name = "morning" value = "Agree">Agree</label></td>
+        <td><label><input type = "radio" id = "Agree" name = "morning" value = "Neutral">Neutral</label></td>
+        <td><label><input type = "radio" id = "Agree" name = "morning" value = "Disagree">Disagree</label></td>
+    </tr>
+    <tr>
+    	<td>I evening classes:</td>
+		<td><label><input type = "radio" id = "Agree" name = "evening" value = "Agree">Agree</label></td>
+        <td><label><input type = "radio" id = "Agree" name = "evening" value = "Neutral">Neutral</label></td>
+        <td><label><input type = "radio" id = "Agree" name = "evening" value = "Disagree">Disagree</label></td>
+    </tr>
+    </table><br>
+    
+    <input type = "submit" value = "Submit">
+    <input type = "reset">
+    
+</form>
+
+</body>
+</html>

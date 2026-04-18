@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Gallery</title>
+  <style>
+  	h1 
+    	{text-align: center;}
+    img 
+    	{width: 150px;
+        height: 100px;}
+    ul
+    	{list-style-type: none;
+        width: 400px;}
+    li
+    	{display: inline;
+        float: left;
+        padding: 10px;}
+	.bigImage
+    	{width: 300px;
+        height: 200px;}
+    span
+    	{position: absolute;
+        left: -1000px;
+        opacity: 0;
+        transition: opacity 3s ease-in-out;}
+    a:hover span
+    	{display: block;
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        text-align: center;
+        opacity: 1;}
+    a
+    	{text-decoration: none;
+        color: #eaeaea;
+        font-style: italic;}
+   	p
+    	{clear: left;}
+    .button 
+    	{text-decoration: none;
+		color: #ffffff;
+        background-color: #0066ff;
+        padding: 1em;
+        font-weight: bold;
+        text-align: center;
+        border: 3px ridge #1e1e1e;
+        box-shadow: 3px 3px 3px #1e1e1e;
+        border-radius: 30px;
+        margin-left: 50px;}
+	.button:hover
+    	{color: #0066ff;
+        background-color: #cccccc;}
+    body
+    	{background-color: #333333;
+        color: #eaeaea;}
+        
+        @media only screen and (max-width: 1024px) {
+        	main 
+            	{margin-left: 0;}
+            nav 
+            	{float: none;
+                width: auto;
+                text-align: center;
+                position: static;}
+            body
+            	{margin: 0;}
+            #wrapper 
+            	{width: auto;}
+        }
+  </style>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<ul>
+	<li><a href = " ../Images/toyota.jpeg"><img src = ../Images/toyota.jpeg>
+    <span><img class = "bigImage" src = ../Images/toyota.jpeg><br>Toyota</span></a></li>
+    <li><a href = " ../Images/kia.jpeg"><img src = ../Images/kia.jpeg>
+    <span><img class = "bigImage" src = ../Images/kia.jpeg><br>Kia</span></a></li>
+    <li><a href = " ../Images/honda.jpeg"><img src = ../Images/honda.jpeg>
+    <span><img class = "bigImage" src = ../Images/honda.jpeg><br>Honda</span></a></li>
+    <li><a href = " ../Images/chevrolet.jpeg"><img src = ../Images/chevrolet.jpeg>
+    <span><img class = "bigImage" src = ../Images/chevrolet.jpeg><br>Chevrolet</span></a></li>
+</ul>
+<p>&nbsp;</p>
+<a class = "button" href = "10-31.html">Go Back</a>
+</body>
+</html>

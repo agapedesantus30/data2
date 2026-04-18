@@ -1,0 +1,83 @@
+body 
+	{background-color:#e6e6fa;
+    color:#191970;
+    font-family:Arial, verdana, sans-serif;
+    /*background-image: url(../Images/dots.png);
+    background-repeat: repeat-x;*/
+    background: url(../Images/icon.png) no-repeat right bottom,
+        		url(../Images/icon.png) no-repeat left bottom,
+                url(../Images/dots.png) repeat-x;
+    background-size: 100px, 100px, auto;}
+h1
+	{background-color:#191970;
+    color:#e6e6fa;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    line-height: 200%;
+    word-spacing: 2em;
+    text-shadow: 3px 2px 5px #cccccc;
+    border-width: 3px;
+    border-style: ridge;
+    border-color: #cccccc;
+    background-image: url(../Images/rainbow.jpg);
+    border-radius: 50px;
+    opacity: 0.7;}
+h2
+	{background-color:#aeaed4;
+    color:#191970;
+    font-family: Georgia, "Times New Roman", serif;
+    text-align: center;
+    line-height: 150%;
+    text-shadow: -3px -2px 5px #FF3300;
+    border-bottom: 2px dashed #191970;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background-image: linear-gradient(to right, #ffffff, #0000ff);}
+nav 
+	{text-align: center;
+	background-image: radial-gradient(#ffffff, #0000ff);
+    padding: 10px;}
+p 
+	{font-size: 0.9em;
+	text-indent: 3em;}
+dt 
+    {font-weight: bold;
+    letter-spacing: 3px;
+    text-decoration: underline;}
+#phone 
+    {font-weight: bold;
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);}
+footer
+	{font-size: 0.8em;
+    font-style: italic;
+    text-align: center;}
+.services
+	{color: #c70000;}
+.company
+	{font-weight: bold;
+    font-size: 1.25em;}
+#wrapper 
+    {width: 960px;
+    margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px #1e1e1e;}
+img 
+	{display: block;
+    margin: auto;
+	width: 100%;
+    height: 100%;}
+figure 
+    {display: block;
+    margin: auto;
+    width: 350px;
+    padding: 5px;
+    border: 10px solid #000000;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;}
+figcaption 
+   	{text-align: center;
+    font-family: Papyrus, fantacy;}
+#address
+    {background-image: url(../Images/address.png);
+    background-repeat: no-repeat;}

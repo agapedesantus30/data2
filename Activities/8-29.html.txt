@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>8-29</title>
+  <style>
+  	body {background-color:#e6e6fa;
+    		color:#191970;
+            font-family:Arial, verdana, sans-serif;}
+    h1 {background-color:#191970;
+    		color:#e6e6fa;
+            font-family: Georgia, "Times New Roman", serif;
+            text-align: center;
+            line-height: 200%;
+            word-spacing: 2em;
+            text-shadow: 3px 2px 5px #cccccc;}
+    h2 {background-color:#aeaed4;
+    		color:#191970;
+            font-family: Georgia, "Times New Roman", serif;
+            text-align: center;
+            line-height: 150%;
+            text-shadow: -3px -2px 5px #FF3300;}
+    p {font-size: 0.9em;
+    	text-indent: 3em;}
+    dt {font-weight: bold;
+    	letter-spacing: 3px;
+        text-decoration: underline;}
+    #phone {font-weight: bold;
+    		font-style: italic;}
+    footer {font-size: 0.8em;
+    		font-style: italic;
+            text-align: center;}
+    .services {color: #c70000;}
+    .company {font-weight: bold;
+    		font-size: 1.25em;}
+  </style>
+</head>
+<body>
+
+<header>
+	<h1> GGC Media Design </h1>
+</header>
+
+<main>
+<h2>New Media &amp; Web Design</h2>
+<p><span class = "company">GGC Media Design.</span> will bring your company's web presence to the next level. 
+We offer a comprehensive range of services</p>
+
+<h2>Our Services Meet Your Business Needs</h2>
+<dl>
+	<dt>Website Design</dt>
+    	<dd>Whether your needs are large or small, we can get you on the web!</dd>
+	<dt class = "services">E-Commerce Solutions</dt>
+    	<dd>We offer quick entry into the e-commerce marketplace.</dd>
+	<dt class = "services">Search Engine Optimization</dt>
+    	<dd>We will get your website noticed by:</dd>
+        <ul style = list-style-position:inside>
+        	<li><a href = "https://www.google.com/" target = "_blank">Google</a></li>
+            <li><a href = "https://www.bing.com/" target = "_blank">Bing</a></li>
+            <li><a href = "https://uk.search.yahoo.com/" target = "_blank">Yahoo</a></li>
+        </ul>
+</dl>
+<div>
+	54321 Peach road <br>
+    Lawrenceville, Ga 30046 <br>
+    <div id = "phone">
+    	888-555-5555 <br>
+    </div>
+</div>
+<br>
+<footer>
+	Copyright &copy; 2019 GGC Media Design <br>
+    <a href = "mailto:Contact@ggcmedia.com">Contact@ggcmedia.com</a> <br>
+</footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>12-3</title>
+  
+  <style>
+  	canvas
+    	{border: 1px solid #d3d3d3;
+        background-color: #f1f1f1;}
+    #button
+    	{text-align: center;
+        width: 480px;}
+    button
+    	{width: 60px;}
+  </style>
+  
+</head>
+<body onload = "startGame()">
+<script>
+	var myGameArea = {
+    	canvas: document.createElement("canvas"),
+        start: function(){
+        	this.canvas.width = 480;
+            this.canvas.height = 270;
+            this.context = this.canvas.getContext("2d");
+            document.body.insertBefore(this.canvas, document.body.childNodes[0]);
+            this.interval = setInterval(updateGameArea, 20);
+            this.frameNo = 0;
+        },
+        clear: function(){
+        	this.context.clearRect(0,0, this.canvas.width, this.canvas.height);
+        },
+        stop: function() {
+        	clearInterval(this.interval);
+        },
+    }
+    
+    var myGamePiece;
+    var myObstacles = [];
+    
+    function startGame(){
+    	myGameArea.start();
+        myGamePiece = new component(30, 30, "../Images/car-right.png", 10, 120, "image");
+        myScore = new component("30px", "Consolas", "black", 280, 40, "text");
+    }
+    
+    function component(width, height, color, x, y, type){
+    	this.width = width;
+        this.height = height;
+        this.color = color;
+        this.x = x;
+        this.y = y;
+        this.type = type;
+        this.speedX = 0;
+        this.speedY = 0;
+        
+        if(type == "image"){
+        	this.image = new Image();
+            this.image.src = color;
+        };
+        
+        this.newPos = function(){
+        	this.x += this.speedX;
+            this.y += this.speedY;
+        };
+        
+        this.update = function(){
+        	var ctx = myGameArea.context;
+            ctx.fillStyle = color;
+            
+            if (type == "text") {
+            	ctx.font = this.width + " " + this.height;
+                ctx.fillText(this.text, this.x, this.y);
+            } 
+            
+            else if (type == "image")
+            	ctx.drawImage(this.image, this.x, this.y, this.width, this.height);
+            else
+            	ctx.fillRect(this.x, this.y, this.width, this.height);
+        };
+        
+        this.crashWith = function(obj) {
+        	var myleft = this.x;
+            var myright = this.x + this.width;
+            var mytop = this.y;
+            var mybottom = this.y + this.height;
+            
+            var objleft = obj.x;
+            var objright = obj.x + obj.width;
+            var objtop = obj.y;
+            var objbottom = obj.y + obj.height;
+            
+            var crash = true;
+            if ((mybottom < objtop) || (mytop > objbottom) ||
+            (myright < objleft) || (myleft > objright)) {
+            	crash = false;
+            }
+            return crash;
+        };
+    }
+    
+    function updateGameArea(){
+    	for (i = 0; i < myObstacles.length; i++) {
+        	if (myGamePiece.crashWith(myObstacles[i])) {
+            	myGameArea.stop();
+                var ok = confirm("Lets play again!");
+                if (ok) {
+                	myGamePiece.x = 10;
+                    myGamePiece.y = 120;
+                    myGamePiece.speedX = 0;
+                    myGamePiece.speedY = 0;
+                    myGameArea.frameNo = 0;
+                    myGameArea.interval = setInterval(updateGameArea, 20);
+                    myObstacles = [];
+                }
+                else
+                	return;
+            }
+        }
+    	myGameArea.clear();
+        myGameArea.frameNo += 1;
+        var x = myGameArea.canvas.width;
+        if (myGameArea.frameNo == 1 || everyInterval(150)) {
+        	minHeight = 20;
+            maxHeight = 200;
+            height = Math.floor(Math.random()*(maxHeight - minHeight + 1) + minHeight);
+            minGap = 50;
+            maxGap = 200;
+            gap = Math.floor(Math.random()*(maxGap - minGap + 1) + minGap);
+            myObstacles.push(new component(10, height, "green", x, 0));
+            myObstacles.push(new component(10,x - height - gap, "green", x, height + gap));
+        }
+        for (i = 0; i < myObstacles.length; i++) {
+        	myObstacles[i].x -= 1;
+            myObstacles[i].update();
+        }
+        myGamePiece.newPos();
+        myGamePiece.update();
+        myScore.text = "SCORE: " + Math.floor(myGameArea.frameNo/10);
+        myScore.update();
+    }
+    
+    function everyInterval(n){
+    	if ((myGameArea.frameNo % n) == 0)
+        	return true;
+        return false;
+    }
+
+	function moveUp(){
+    	myGamePiece.speedY -= 1;
+    }
+    
+    function moveDown(){
+    	myGamePiece.speedY += 1;
+    }
+    
+    function moveLeft(){
+    	myGamePiece.speedX -= 1;
+        myGamePiece.image.src = "../Images/car-left.png";
+    }
+    
+    function moveRight(){
+    	myGamePiece.speedX += 1;
+        myGamePiece.image.src = "../Images/car-right.png";
+    }
+    
+    function clearMove(){
+    	myGamePiece.speedX = 0;
+        myGamePiece.speedY = 0;
+    }
+    
+</script>
+
+<div id = "button">
+	<button onmousedown = "moveUp()" onmouseup = "clearMove()">Up</button><br><br>
+    <button onmousedown = "moveLeft()" onmouseup = "clearMove()">Left</button>
+    <button onmousedown = "moveRight()" onmouseup = "clearMove()">Right</button><br><br>
+    <button onmousedown = "moveDown()" onmouseup = "clearMove()">Down</button>
+</div>
+
+</body>
+</html>

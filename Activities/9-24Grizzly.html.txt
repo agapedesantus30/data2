@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>9-24Grizzly</title>
+  <style>
+  	h1 
+    	{text-align: center;}
+  </style>
+</head>
+<body>
+
+<h1>Grizzly Picture</h1>
+<picture>
+	<source media = "(min-width: 1024px)" srcset = "../Images/large.jpg">
+    <source media = "(min-width: 768px)" srcset = "../Images/medium.png">
+    <img src = "../Images/small.png" alt = "GGC Grizzly Pictures">
+</picture>
+</body>
+</html>

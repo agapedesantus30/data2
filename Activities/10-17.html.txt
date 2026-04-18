@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>10-17</title>
+  <style>
+  	#wrapper
+    	{width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #eaeaea;
+        box-shadow: 5px 5px 5px #1e1e1e;
+        padding-top: 10px;
+        padding-bottom: 10px;}
+    h1, p
+    	{text-align: center;}
+    #in, img
+    	{width: 100px;
+        display: block;
+        margin: auto;}
+    label
+    	{float: left;
+        width: 200px;
+        text-align: right;
+        padding-right: 10px;
+        clear: left;}
+    input
+    	{display: block;}
+    button
+    	{display: block;
+        margin: auto;}
+  </style>
+</head>
+<body>
+
+<div id = "wrapper">
+<h1>GGC IT Student Association</h1>
+	<form method = "post" action = "10-22.html">
+		<label for = "studentID">Student ID: </label>
+        <input type = "text" id = "studentID" name = "studentID" required = "re"><br>
+        
+        <label for = "paw">Password: </label>
+        <input type = "text" id = "paw" name = "paw" required = "re"><br>
+        <input type = "image" id = "in" src = "../Images/signin.jpg" alt = "Sign in button"> <br>
+	</form>
+    
+    <hr>
+    <form>
+    	<p>Don't have an account?</p>
+        	<button type = "submit" formaction = "10-15.html">
+            	<img src = "../Images/signup.jpg" alt = "Sign up button"><br>
+                Sign up for latext IT news.
+            </button>
+    </form>
+</div>
+
+</body>
+</html>

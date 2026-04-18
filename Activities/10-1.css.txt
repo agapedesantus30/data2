@@ -1,0 +1,38 @@
+table
+	{border: 5px solid #000066;
+    margin: auto;
+    width: 600px;}
+td, th
+	{border: 1px solid #000066;
+    padding: 0.5em;
+    font-family: Arial, sans-serif;}
+caption
+	{font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em;}
+.altrow
+	{background-color: #eaeaea;}
+#schedule tr:first-of-type
+	{background-color: #000066;
+    color: #eaeaea;}
+#schedule tr:last-of-type
+	{background-color: #0000ff;
+    color: #eaeaea;}
+#schedule tr:nth-of-type(3)
+	{background-color: #ffff00;}
+#schedule tr:nth-of-type(5)
+	{background-color: #00ff00;}
+#complexTable1
+	{border-collapse: collapse;
+    text-align: center;
+    background-image: url(../Images/dots.png);
+    height: 400px;}
+#complexTable2
+	{border-collapse: collapse;
+    text-align: center;
+    background-color: #ffff00;
+    height: 400px;}
+#large
+	{background-image: url(../Images/large.jpg);
+    background-size: 130%;}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>9-19</title>
+</head>
+	<style>
+    	#wrapper 
+        	{width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 5px 5px 5px #1e1e1e;
+            background-color: #cccccc;}
+        main 
+        	{margin-left: 140px;
+            margin-right: 210px;
+            padding: 10px;
+            background-color: #ffffff;}
+            
+        h1, h2 
+        	{text-align: center;}
+        ul 
+        	{list-style-type: none;}
+        nav 
+        	{float: left;
+            width: 140px;
+            padding: 0px;}
+        nav ul 
+        	{margin: 0;
+            padding: 0;}
+        nav a
+        	{text-decoration: none;
+            padding: 20px;
+            display: block;
+            background-color: #b3c7e6;
+            border-bottom: 1px solid #ffffff;}
+        nav a:link 
+        	{color: #ffffff;}
+        nav a:visited 
+        	{color: #ff0000;}
+        nav a:hover 
+        	{color: #0000ff;
+            background-color: #eaeaea;}
+        aside 
+        	{float: right;
+            width: 200px;}
+        aside h3 
+        	{border-bottom: 1px solid #000000;
+            padding-bottom: 2px;
+            margin-right: 10px;}
+    </style>
+<body>
+<div id = "wrapper">
+<nav>
+	<ul>
+    	<li><a href = "9-19.html">Home</a></li>
+        <li><a href = "9-19Gallery.html">Gallery</a></li>
+        <li><a href = "#vision">Vision</a></li>
+        <li><a href = "#mission">Mission</a></li>
+        <li><a href = "https://www.ggc.edu/about-ggc/" target = "blank">GGC</a></li>
+        <li><a href = "9-5.html#address">Address</a></li>
+    </ul>
+</nav>
+<aside>
+	<h3>Banking</h3>
+    <p>GGC was ranked number one for its ethnic diversity.</p>
+    <h3>$451 Million</h3>
+    <p>GGC generated more than $451 milliom into local economy</p>
+    <h3>Contact</h3>
+    <a href = "sms:888-878-7777">Call 888-878-7777</a> <br>
+    <a href = "sms:888-878-7777">Text 888-878-7777</a>
+</aside>
+<main>
+<h1 id = "top">Georgia Gwinnett College</h1>
+<h2>Welcome to the future of education. Your education.</h2>
+
+<p>A few years ago, Georgia Gwinnett College was home to just over 100 students. Let’s just say – things have changed. 
+What was once 260 acres of rolling terrain has become the perfect metropolitan college campus of about 12,000 students. 
+What’s so perfect about it? GGC adapts to how you do things – your learning style, your work schedule and your life. 
+From the ground up, GGC was designed to help you succeed. That's game changing.</p>
+
+<h2>Founded</h2>
+
+<p>In 1994, Gwinnett County was the largest county east of the Mississippi without a four-year college. So Gwinnett County 
+leaders purchased 160 acres of land and designated it specifically for the development of a college campus. GGC opened 
+its doors in 2006 as the first four-year college founded in Georgia in more than 100 years, and the first four-year, 
+public college created in the U.S. in the 21st century. Georgia Gwinnett College is a member of the University System 
+of Georgia.</p>
+
+<h2 id = "vision">Vision</h2>
+
+<p>Georgia Gwinnett College will be a premier 21st Century Liberal Arts College where learning will take place continuously
+in and beyond the confines of the traditional classroom. Its cornerstones will be innovative use of educational technology
+and a commitment to an integrated educational experience that develops the whole person. GGC will be a wellspring of 
+educational innovation. It will be a dynamic learning community where faculty engagement in teaching and mentoring 
+students will be the hallmark. It will be a driving force for change in student success. As such, it will be a model for 
+innovative approaches to education, faculty engagement with students, and highly efficient student, facility, and 
+administrative services.</p>
+
+<h2 id="mission">Mission</h2>
+
+<p>Georgia Gwinnett College provides access to targeted baccalaureate and associate level degrees that meet the economic 
+development needs of the growing and diverse population of the northeast Atlanta metropolitan region. It emphasizes the
+innovative use of technology and active-learning environments to provide its students enhanced learning experiences,
+practical opportunities to apply knowledge, increased scheduling flexibility, and a variety of course delivery options.
+Georgia Gwinnett’s outstanding faculty and staff actively engage students in various learning environments, 
+serve as mentors and advisors, and assist students through programs designed to enhance their academic, 
+social, and personal development. GGC produces contributing citizens and future leaders for Georgia and the nation. 
+Its graduates are inspired to contribute to the local, state, national, and international communities and are prepared 
+to anticipate and respond effectively to an uncertain and changing world.</p>
+
+<a href= "#top">Back to top</a>
+</main>
+</div>
+</body>
+</html>

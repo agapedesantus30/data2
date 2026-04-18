@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <link href = "10-31.css" rel = "stylesheet">
+  <title>10-31</title>
+</head>
+<body>
+
+<nav>
+	<ul>
+    	<li><a href = "10-31.html">Home</a></li>
+        <li>Multimedia
+        <ul>
+        	<li><a a href = "#audio">Audio</a></li>
+            <li><a a href = "#video">Video</a></li>
+            <li><a a href = "#image">Image</a></li>
+            <li><a a href = "#animation">Animation</a></li>
+        </ul>
+        </li>
+        <li><a href = "10-31Gallery.html">Gallery</a></li>
+    </ul>
+</nav>
+
+<h2 id = "audio">My favorite Music</h2>
+	<audio controls = "controls">
+    	<source src = "../Images/Kalimba.mp3" type = "audio/mpeg">
+	</audio><br>
+    Downlaod the <a href = "../Images/kalimba.mp3">music</a> (mp3)
+    
+<h2 id = "video">My Favorite Dog</h2>
+	<video controls = "controls">
+    	<source src = "../Images/sparky.m4v" type = "video/mp4">
+        <source src = "../Images/sparky.mov" type = "video/mov">
+    </video><br>
+    Downlaod the <a href = "../Images/sparky.m4v">video</a> (m4v)<br>
+    Downlaod the <a href = "../Images/sparky.mov">video</a> (mov)
+    
+<h2 id = "image">My Favorite Cat</h2>
+	<img src = "../Images/cat.jpg">
+    <br><br>
+    
+<h2 id = "animation">My Animation</h2>
+	<div id = "div1">Hello</div><br>
+    <div id = "div2"></div><br>
+    <div id = "div3"></div><br>
+    <div id = "div4"></div><br>
+    <div id = "div5"></div><br>
+    <div id = "div6"></div><br>
+    <div id = "div7">Hi, there...</div><br>
+    <div id = "div8"></div><br>
+    <div id = "div9"></div><br>
+    
+</body>
+</html>

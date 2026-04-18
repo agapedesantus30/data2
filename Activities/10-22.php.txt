@@ -1,0 +1,20 @@
+<?php
+	echo "<h1>Thank you for taking the survey</h1>";
+    echo "<h2>Below are your answers to the survey questions</h2>";
+    
+    echo "Your favorite website:" .$_POST["web"]. "<br><br>";
+    echo "Your favorite color:" .$_POST["col"]. "<br><br>";
+    echo "Your least favorite color:" .$_POST["leastcol"]. "<br><br>";
+    echo "Your favorite day:" .$_POST["dy"]. "<br><br>";
+    echo "Your lucky number from 0 to 10:" .$_POST["no"]. "<br><br>";
+    
+    echo "Your height is: " .$_POST["feet"];
+    echo " feet " .$_POST["inches"]. " inches <br><br>";
+    
+    echo "Your satisfaction with this web site: " .$_POST["sat"]. "<br><br>";
+    
+    echo "<h4>Your Opinion on classes</h4>";
+    echo "Your Opinion on morning classes:" .$_POST["morning"]. "<br><br>";
+    echo "Your Opinion on evening classes:" .$_POST["evening"]. "<br><br>";
+
+?>

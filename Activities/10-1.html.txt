@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>10-1</title>
+  <link href = "10-1.css" rel = "stylesheet">
+</head>
+<body>
+
+<table id = "schedule">
+	<caption>ITEC 2130 Weekly Schedule</caption>
+    
+<tr>
+	<th>Week</th>
+    <th>Chapter</th>
+    <th>Content</th>
+</tr>
+<tr class =  "altrow">
+	<th>1</th>
+    <td>Chapter 1</td>
+    <td>Introduction</td>
+</tr>
+<tr>
+	<th>2</th>
+    <td>Chapter 2</td>
+    <td>HTML Basics</td>
+</tr>
+<tr class =  "altrow">
+	<th>3</th>
+    <td>Chapter 3</td>
+    <td>CSS</td>
+</tr>
+<tr>
+	<td colspan = "2">2 columns</td>
+    <td>1 column</td>
+</tr>
+<tr class =  "altrow">
+	<td>1 column</td>
+	<td colspan = "2">2 columns</td>
+</tr>
+<tr>
+	<td colspan = "3">3 columns</td>
+</tr>
+<tr class =  "altrow">
+	<td rowspan = "2">2 Rows</td>
+    <td>cell a</td>
+    <td>cell b</td>
+</tr>
+<tr>
+    <td>cell a</td>
+    <td>cell b</td>
+</tr>
+
+<tr class =  "altrow">
+    <td>cell a</td>
+    <td rowspan = "2">2 Rows</td>
+    <td rowspan = "2">2 Rows</td>
+</tr>
+<tr>
+	<td>cell b</td>
+</tr>
+
+<tr class =  "altrow">
+	<td  rowspan = "2" colspan = "2">cell a</td>
+    <td>cell b</td>
+</tr>
+<tr>
+    <td>cell c</td>
+</tr>
+
+<tr>
+	<td>Notes</td>
+    <td>cell a</td>
+    <td>cell b</td>
+</tr>
+
+</table>
+<br>
+
+<table id = "complexTable1">
+	<caption>Complex Table 1</caption>
+    <tr>
+		<td colspan = "2">a</td>
+    	<td rowspan = "5">b</td>
+    	<td colspan = "2">c</td>
+	</tr>
+    <tr>
+		<td>d</td>
+    	<td>e</td>
+    	<td>f</td>
+        <td>g</td>
+	</tr>
+    <tr>
+		<td colspan = "2">h</td>
+    	<td colspan = "2">i</td>
+	</tr>
+    <tr>
+    	<td rowspan = "2">j</td>
+    	<td>k</td>
+    	<td>L</td>
+     	<td rowspan = "2">m</td>
+    </tr>
+    <tr>
+    	<td>n</td>
+    	<td>o</td>
+    </tr>
+   
+<table id = "complexTable2">
+    <caption>Table 2</caption>
+    <tr>
+		<td colspan = "2">a</td>
+    	<td>b</td>
+    	<td>c</td>
+        <td>d</td>
+        <td colspan = "2">e</td>
+	</tr>
+    <tr>
+		<td colspan = "2">a</td>
+    	<td td  rowspan = "3" colspan = "3" id = "large"></td>
+        <td colspan = "2">e</td>
+	</tr>
+    <tr>
+		<td colspan = "2">a</td>
+        <td colspan = "2">e</td>
+	</tr>
+   <tr>
+		<td colspan = "2">a</td>
+        <td colspan = "2">e</td>
+	</tr>
+    <tr>
+		<td colspan = "2">a</td>
+    	<td>b</td>
+    	<td>c</td>
+        <td>d</td>
+        <td colspan = "2">e</td>
+	</tr>
+</table>
+
+</table>
+
+</body>
+</html>

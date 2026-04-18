@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>9-3 Teams</title>
+  <link href = "9-3.css" rel = "stylesheet">
+</head>
+<body>
+<header>
+<h1>GGC Media Design</h1>
+</header>
+
+<nav>
+     <b><a href = "9-3.html">Home</a> &nbsp; &nbsp;
+     <a href = "9-3Projects.html">Project</a> &nbsp; &nbsp;
+     <a href ="9-3Teams.html"> Service Teams</a>&nbsp; &nbsp;
+     <a href = "9-3Contacts">Contacts</a></b>
+</nav>
+<main>
+<h2>Servic Teams</h2>
+<ul>
+	<li>CEO</li>
+	<small><i><a href = "mailto:CEO@ggcmedia.com">CEO@ggcmedia.com</a></i></small><br>
+</ul>
+<ul>
+	<li>President</li>
+	<small><i><a href = "mailto:President@ggcmedia.com">President@ggcmedia.com</a></i></small><br>
+</ul>
+<ul>
+	<li>Vice President</li>
+	<small><i><a href = "mailto:vicepresident@ggcmedia.com">vicepresident@ggcmedia.com</a></i>
+    </small><br>
+</ul>
+
+</main>
+<br>
+<footer>
+	<small><i>Copyright &copy; 2019 GGC Media Design</i></small><br>
+	<small><i><a href = "mailto:contact@ggcmedia.com">contact@ggcmedia.com</a></i></small><br>
+</footer>
+  
+  <p>&nbsp;</p>
+
+</body>
+</html>

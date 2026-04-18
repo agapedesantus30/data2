@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>9-3</title>
+  
+  <link href = "9-3.css" rel = "stylesheet">
+  
+</head>
+<body>
+<div id = "wrapper">
+<header>
+	<h1> GGC Media Design </h1>
+</header>
+
+<nav>
+    <a href = "9-3.html">Home</a> &nbsp; &nbsp;
+    <a href = "9-3Projects.html">Projects</a> &nbsp; &nbsp;
+    <a href = "9-3Teams.html">Service Teams</a>
+</nav>
+<br>
+<figure>
+	<img src = "../Images/media-design.jpg" alt = "Media Design Image">
+<figcaption>Try out services</figcaption>
+</figure>
+<main>
+<h2>New Media &amp; Web Design</h2>
+<p><span class = "company">GGC Media Design.</span> will bring your company's web presence to the 
+next level. We offer a comprehensive range of services</p>
+
+<h2>Our Services Meet Your Business Needs</h2>
+<dl>
+	<dt>Website Design</dt>
+    	<dd>Whether your needs are large or small, we can get you on the web!</dd>
+	<dt class = "services">E-Commerce Solutions</dt>
+    	<dd>We offer quick entry into the e-commerce marketplace.</dd>
+<dt class = "services">Search Engine Optimization</dt>
+    <dd>We will get your website noticed by:</dd>
+        <ul style = list-style-position:inside>
+        <li><a href = "https://www.google.com/" target = "_blank">Google</a></li>
+            <li><a href = "https://www.bing.com/" target = "_blank">Bing</a></li>
+            <li><a href = "https://uk.search.yahoo.com/" target = "_blank">Yahoo</a></li>
+        </ul>
+</dl>
+
+<h2>Monthly Report</h2>
+	<meter value = "50" min = "0" max = "50"> 50 </meter> 50 Web Design Services<br>
+	<meter value = "30" min = "0" max = "50"> 30 </meter> 50 E-Commerce Services<br>
+	<meter value = "20" min = "0" max = "50"> 20 </meter> 50 Search Engine Optimization Services<br>
+
+
+<h2> Progress Report</h2>
+<progress value = "6" min = "0" max = "10"> 60% </progress> Prgress Towards Our Goals
+<br>
+<div>
+	54321 Peach road <br>
+    Lawrenceville, Ga 30046 <br>
+    <div id = "phone">
+    888-555-5555 <br>
+    </div>
+</div>
+</main>
+<br>
+<footer>
+	Copyright &copy; 2019 GGC Media Design <br>
+    <a href = "mailto:Contact@ggcmedia.com">Contact@ggcmedia.com</a> <br>
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>11-12</title>
+  
+  <script>
+  	function easyTest() {
+    	var number;
+        number = prompt("What is 6 + 2?");
+        
+        if (parseInt(number) == 8) {
+        	alert("Correct!");
+        } else {
+        	alert("Wrong!");
+        }
+    }
+    
+    function mediumTest() {
+    	var num;
+        num = prompt("Please enter first Value");
+        var num1;
+        num1 = prompt("Please enter Second Value");
+        var ans;
+        ans = prompt("what is "+ num + "*" + num1);
+        
+        if (parseInt(ans) == parseInt(num) * parseInt(num1)) {
+        	alert("Correct!");
+        } else {
+        	alert("Wrong!");
+        	}
+   		}
+        
+	function hardTest() {
+    	var num1, num2, num3;
+        num1 = prompt("Please input a small number");
+        num2 = prompt("Please input a larger number");
+        num3 = prompt("what is the sum of all the whole numbers from" + num1 + " to " + num2);
+        
+        var sum = 0;
+        
+        for (i = parseInt(num1); i<=parseInt(num2); i++) {
+        	sum += i;
+        }
+        
+        if (parseInt(num3) == sum) {
+        	alert("Correct!");
+			} else { 
+        	alert("Wrong!");
+            }
+	}
+    
+    function convert() {
+    	var fah, cel;
+        fah = prompt("Please enter a degree in Fahrenheit");
+		cel = (5/9) * (parseInt(fah) - 32)
+		alert("It is " + cel.toFixed(1) + " degrees in Celsius");
+    }
+        
+    function countDate() {
+    	var year, month, day;
+        year = prompt("Please enter a special year:");
+        month = prompt("Please enter a special month:");
+        day = prompt("Please enter a special day:");
+        
+        var sd = new Date(year, month-1, day);
+        var now = new Date();
+        var days = Math.ceil((sd.getTime() - now.getTime())/(1000*60*60*24));
+        
+        if (days >= 0) {
+        	alert("There are " + days + " days left until your special day.");
+        } else {
+			alert((0-days) + " days past since your special day.");
+        }
+    }
+    
+  </script>
+</head>
+<body>
+
+<!--
+<script>
+	var userName;
+    userName = prompt("Please input your name:");
+    document.write("<h2> Hello " + userName + "</h2>");
+    var userColor;
+    userColor = prompt(userName + ", do you like red, blue, green, or yellow as background color?");
+    document.bgColor = userColor;
+    userColor = prompt(userName + ", do you like red, blue, green, yellow, white or black as font color?");
+    document.fgColor = userColor;
+</script>
+
+<script>
+	var score;
+    score = prompt(userName + ", Please put in your test score");
+    if (score >= 90) {
+    	document.write("<h2>Your awesome " + userName + "! you got an A!</h2>");
+    } else if (score >= 80) {
+    	document.write("<h2>B</h2>");
+        } else if (score >= 70) {
+    		document.write("<h2>C</h2>");
+        	} else if (score >= 60) {
+    			document.write("<h2>D</h2>");
+                } else {
+    	document.write("<h2>Work harder!</h2>");
+        }
+</script>
+-->
+
+<h2>Select a test to take:</h2>
+	<input type = "button" value = "Easy" onclick = "easyTest();" >
+	<input type = "button" value = "Medium" onclick = "mediumTest();">
+	<input type = "button" value = "Hard" onclick = "hardTest();">
+    
+<h2>Fahrenheit to Celsius Converter:</h2>
+<input type = "button" value = "Convert" onclick = "convert();">
+
+<h2>Special Date Counter:</h2>
+<input type = "button" value = "Count" onclick = "countDate();">
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<?php
+	echo "<h1>Thank you for providing your comments. </h1>";
+    
+    if ($_POST["passTT"] != $_POST["repassTT"]) {
+    	echo "You need to retype password. <br>";
+        exit();
+    }
+    
+    echo "<h2>Required personal information. </h2>";
+    echo "Your Student ID: " .$_POST["stTT"]. "<br>";
+    echo "Your Password: " .$_POST["passTT"]. "<br>";
+    echo "Your Retyped Password: " .$_POST["repassTT"]. "<br>";
+    
+    echo "Your first Name: " .$_POST["ftname"]. "<br>";
+    echo "Your Last Name: " .$_POST["ltname"]. "<br>";
+    echo "Your Phone Number: " .$_POST["number"]. "<br>";
+    echo "Your Email: " .$_POST["cemail"]. "<br>";
+    
+    echo "Your Street: " .$_POST["strTT"]. "<br>";
+    echo "Your City: " .$_POST["cyTT"]. "<br>";
+    echo "Your State: " .$_POST["staTT"]. "<br>";
+    echo "Your Zip: " .$_POST["zTT"]. "<br>";
+    
+    echo "Your Level: " .$_POST["levelTT"]. "<br>";
+    
+    echo "<h2>IT Preferences</h2>";
+    if(isset ($_POST["chb"]) && $_POST["chb"] == "yes") {
+    echo "you own a computer.<br>";
+    }
+    
+    echo "You use computer " . $_POST["time"] . " a day <br>";
+    
+    echo "Your favorite computer brand is " . $_POST["computer"];
+    echo "<br>";
+    
+    echo "Your Favorite Browser is <br>";
+    if(isset($_POST["ie"]) && $_POST["ie"] == "yes")
+    echo "Internet Explorer ";
+    	if(isset($_POST["firefox"]) && $_POST["firefox"] == "yes")
+        echo "firefox ";
+    		if(isset($_POST["chrome"]) && $_POST ["chrome"] == "yes")
+        	echo "Chrome ";
+    			if(isset($_POST["safari"]) && $_POST["safari"] == "yes")
+        		echo "safari ";
+                echo "<br>";
+                
+	echo "Your major concentration " . $_POST["major"] . "<br>";
+    
+    echo "<br>";
+    echo "Click <a href = '10-17.html'>here </a> to sign in.";
+?>

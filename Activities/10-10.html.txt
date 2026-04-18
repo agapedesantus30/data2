@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>10-10</title>
+  <style>
+  	fieldset, textarea
+    	{width: 400px;
+        border: 2px ridge #eaeaea;
+        padding: 10px;
+        margin-bottom: 10px;}
+    th
+    	{text-align: right;}
+  </style>
+</head>
+<body>
+
+
+
+<h1>Contact Us</h1>
+<form method = "get" action = "10-10.php">
+<fieldset>
+<legend>Customer Information</legend>
+<table>
+<tr>
+	<th><label for = "fname">First Name: </label></th>
+    <th><input type = "text" id = "fname" name = "ftname" placeholder = "E.g John"></th>
+</tr>
+<tr>
+	<th><label for = "lname">Last Name: </label></th>
+    <td><input type = "text" id = "lname" name = "ltname" placeholder = "E.g Smith"></td>
+</tr>
+<tr>
+	<th><label for = "pnumber">Phone: </label></th>
+    <th><input type = "text" id = "pnumber" name = "number" placeholder = "E.g 888-888-8888"></th>
+</tr>
+<tr>
+	<th><label for = "email">Email: </label></th>
+    <td><input type = "email" id = "email" name = "cemail" placeholder = "E.g jsmith@ggc.edu"></td>
+</tr>
+</table>
+</fieldset>
+	<label for = "comments">Comments:</label><br>
+    <textarea rows = "4" cols = "40" id = "comments" name = "comments" placeholder = "Please input your comments here.">
+    </textarea>
+    <br>
+    <input type = "submit" value = "Contact">
+    <input type = "reset">
+
+</form>
+</body>
+</html>

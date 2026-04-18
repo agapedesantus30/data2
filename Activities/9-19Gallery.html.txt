@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Gallery</title>
+  <style>
+  	h1 
+    	{text-align: center;}
+    img 
+    	{width: 300px;
+        height: 200px;}
+    ul
+    	{list-style-type: none;
+        margin: auto;
+        display: block;}
+    li
+    	{display: inline-block;
+        width: 300px;
+        padding-bottom; 10px;
+        text-align: center;
+        font-style: italic;
+        background: #d1ecff;}
+  </style>
+</head>
+<body>
+<h1>Image Gallery</h1>
+<ul>
+	<li><img src = ../Images/toyota.jpeg>Toyota</li>
+    <li><img src = ../Images/kia.jpeg>Kia</li>
+    <li><img src = ../Images/honda.jpeg>Honda</li>
+    <li><img src = ../Images/chevrolet.jpeg>Chevrolet</li>
+</ul>
+
+</body>
+</html>

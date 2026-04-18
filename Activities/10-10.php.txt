@@ -1,0 +1,10 @@
+<?php
+	echo "Thank you for providing your comments. <br><br>";
+    
+    echo "Your first Name: " .$_GET ["ftname"]. "<br>";
+    echo "Your Last Name: " .$_GET ["ltname"]. "<br>";
+    echo "Your Phone Number: " .$_GET ["number"]. "<br>";
+    echo "Your Email: " .$_GET ["cemail"]. "<br>";
+    echo "Your Comment: " .$_GET ["comments"]. "<br>";
+    
+?>

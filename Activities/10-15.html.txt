@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>10-15</title>
+  <style>
+  	fieldset, textarea
+    	{width: 400px;
+        border: 2px none #eaeaea;
+        padding: 10px;
+        margin-bottom: 10px;}
+    th
+    	{text-align: right;}
+  </style>
+</head>
+<body>
+
+
+
+<h1>IT Student Registration</h1>
+<p>Required fields are marked with an asterisk (*)</p>
+<form method = "post" action = "10-15.php">
+<fieldset>
+<legend>Personal Information</legend>
+<table>
+<tr>
+	<th><label for = "sID">*Student ID:</label></th>
+    <td><input type = "text" id = "sID" name = "stTT" required = "required"></td>
+</tr>
+<tr>
+	<th><label for = "Pass">*Password:</label></th>
+    <td><input type = "password" id = "pass" name = "passTT" required = "required"></td>
+</tr>
+<tr>
+	<th><label for = "rePass">*Retype Password:</label></th>
+    <td><input type = "password" id = "rePass" name = "repassTT" required = "required"></td>
+</tr>
+<tr>
+	<th><label for = "fname">First Name:</label></th>
+    <td><input type = "text" id = "fname" name = "ftname" placeholder = "E.g John"></td>
+</tr>
+<tr>
+	<th><label for = "lname">Last Name:</label></th>
+    <td><input type = "text" id = "lname" name = "ltname" placeholder = "E.g Smith"></td>
+</tr>
+<tr>
+	<th><label for = "pnumber">Phone:</label></th>
+    <td><input type = "text" id = "pnumber" name = "number" placeholder = "E.g 888-888-8888"></td>
+</tr>
+<tr>
+	<th><label for = "email">*Email:</label></th>
+    <td><input type = "email" id = "email" name = "cemail" required = "required" placeholder = "E.g jsmith@ggc.edu"></td>
+</tr>
+<tr>
+	<th><label for = "str">Street: </label></th>
+    <td><input type = "text" id = "str" name = "strTT"></td>
+</tr>
+<tr>
+	<th><label for = "cy">City: </label></th>
+    <td><input type = "text" id = "cy" name = "cyTT" ></td>
+</tr>
+<tr>
+	<th><label for = "sta">State: </label></th>
+    <td><input type = "text" id = "sta"  size = "2" maxlength = "2" name = "staTT" ></td>
+</tr>
+<tr>
+	<th><label for = "z">Zip: </label></th>
+    <td><input type = "text" id = "z" size = "5" maxlength = "5" name = "zTT" ></td>
+</tr>
+
+<tr>
+	<th><label for = "level"> Level: </label></th>
+    <td>
+    	<select size = "1" id = "level" name = "levelTT">
+        	<option> Choose your level at GGC</option>
+            <option value = "freshman"> Freshman </option>
+            <option value = "Sophmore"> Sophmore </option>
+            <option value = "Junior"> Junior </option>
+            <option value = "Senior"> Senior </option>
+        </select>
+    </td>
+</tr>
+
+</table>
+</fieldset>
+    
+	<br>
+    <fieldset>
+    	<legend>IT Preferences</legend>
+        <input type = "checkbox" id = "chb" name = "chb" value = "yes"><label for = "chb">I own a computer.</label><br><br>
+        
+    How long do you use a computer in a day?<br>
+    <input type = "radio" id = "time1" name = "time" value = "0-2 hours"><label for = "time1" >0-2 hours</label><br>
+    <input type = "radio" id = "time2" name = "time" value = "0-5 hours"><label for = "time2" >0-5 hours</label><br>
+    <input type = "radio" id = "time3" name = "time" value = "5+ hours"><label for = "time3" >5+ hours</label><br><br>
+    
+   	What is your favorite computer brand?<br>
+    <input type = "radio" id = "m1" name = "computer" value = "Mac"><label for = "m1" >Mac</label><br>
+    <input type = "radio" id = "d1" name = "computer" value = "Dell"><label for = "d1" >Dell</label><br>
+    <input type = "radio" id = "h1" name = "computer" value = "HP"><label for = "h1" >HP</label><br>
+    <input type = "radio" id = "l1" name = "computer" value = "Lenovo"><label for = "l1" >Lenovo</label><br><br>
+    
+    What is your favorite web browser? (you can pick more than one option)<br>
+    <input type = "checkbox" id = "ie" name = "ie" value = "yes"><label for = "ie">Internet Explorer</label><br>
+    <input type = "checkbox" id = "firefox" name = "firefox" value = "yes"><label for = "firefox">Firefox</label><br>
+    <input type = "checkbox" id = "chrome" name = "chrome" value = "yes"><label for = "chrome">Chrome</label><br>
+    <input type = "checkbox" id = "safari" name = "safari" value = "yes"><label for = "safari">Safari</label><br><br>
+    
+    What is your major concentration?<br>
+    <select size = "1" name = "major">
+		<option value = "Digital Media">Digital Media</option>
+        <option value = "Enterprise Systems">Enterprise Systems</option>
+        <option value = "Software Development">Software Development</option>
+        <option value = "System and Security">System and Security</option>
+        <option value = "Data Analytic">Data Analytic</option>
+    </select>
+    
+    </fieldset><br>
+    <br>
+    <input type = "submit" value = "Register">
+    <input type = "reset">
+
+</form>
+</body>
+</html>

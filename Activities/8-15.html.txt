@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>8-15</title>
+</head>
+<body>
+
+<h1>Notes on Ch1</h1>
+<h2>ICANN (The internet corporation for assigned number & name)</h2>
+<h3>This company is responsible coordinating the assignment of ip address numbers, protocol parameters,
+internet domain names and protocol port numbers</h3>
+
+<h2>The internet client server model</h2>
+<h3>This describes the relationship between a client and the server</h3>
+
+<h3>client server</h3>
+<h4>Connected to the Internet when needed</h4>
+<h4>Usually runs web browser (client) software (such as Internet Explorer or Firefox)</h4>
+<h4>Uses HTTP (Hypertext Transfer Protocol)</h4>
+<h4>Requests web pages from server</h4>
+<h4>Receives web pages and files from server</h4>
+<h3>web server</h3>
+<h4>ontinually connected to the Internet</h4>
+<h4>Runs web server software (such as Apache or Internet Information Server)</h4>
+<h4>Uses HTTP (Hypertext Transfer Protocol)</h4>
+<h4>Receives request for the web page</h4>
+<h4>Responds to request and transmits status code, web page, and associated files</h4>
+
+<h3>Protocols</h3>
+<h4>These are a set of rules that describe the methods in which a client and a server communicates between 
+each other</h4>
+
+<h3>HTTP (Hypertext Transfer Protocol)</h3>
+<h4>A set of rules for exchanging multimedia files on the web.
+Web browsers sends HTTP request, Web servers provide response</h4>
+
+<h3>TCP/IP (Transmission control protocol/Internet Protocol)</h3>
+<h4>TCP and IP work together to ensure reliable communication over the internet</h4>
+
+<h3>IP</h3>
+<h4>Every device connected to the internet has a unique IP. They are usually a set of 4 groups of number 
+called octets. An iP may correspond to a domain name </h4>
+
+<h3>Domain Name</h3>
+<h4>Domain names associate IPs to understandable names we type into the web browser</h4>
+
+<h3>URI and URL (Uniform resource identifier) and (Uniform resource locator)</h3>
+<h4>URI identifies a resource on the internet. A URL represents the network location of a resource</h4>
+
+<h3>TLD (Top level domain)</h3>
+<h4>This identifies the right most side of a domain name. examples .com, .org</h4>
+
+<h3>Markup Languages</h3>
+<h4>HTML (Hypertext Markup Lnaguage)</h4>
+<h4>This is a set of markup symbols or codes placed in a file to display on a web browser</h4>
+<h4>XML (eXtensible Markup Language)</h4>
+<h4>This is a text based language designed to describe deliver and exchange structured information</h4>
+<h4>XHTML (eXtensible Hypertext Markup Language)</h4>
+<h4>This combines the formatting strengths of HTML 4.0 and the data structure extensibility of XML </h4>
+
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Review Sheet</title>
+</head>
+<body>
+
+<h1>HTML Structural Elements in the body</h1>
+<h2>header syntax (header)(h1)(/h1)(/header)</h2>
+<header>
+	The header is more about the positioning
+</header>
+<h2>The Nav Is link at top of page</h2>
+Nav syntax (nav)(links (a href = "link" target = "_blank" )(/a) )(/nav)
+<nav>
+	<b>
+    <a href = "https://www.w3schools.com/html/html_computercode_elements.asp" target = "_blank">
+    W3 schools</a> &nbsp;&nbsp;
+    <a href = "https://developer.android.com/studio" target = "_blank"> Android Studio </a> &nbsp;&nbsp;
+    <a href = "https://stackoverflow.com/" target = "_blank"> Stack Overflow </a>
+    </b>
+</nav>
+<h2>main (main)(/main)</h2>
+The main contents go in the main
+<main>
+<h2>HTML Commands Learned Today</h2>
+<ul>
+	<li>Unordered list syntax (ul)(li)(/li)(/ul)</li>
+</ul>
+<ol>
+	<li>Ordered List syntax (ol)(li)(/li)(/ol)</li>
+</ol>
+<dl>
+	<dt><b>Descriptive list (dl)(dt)dt for what your describing(dt)(dl)</b></dt>
+    	<dd>description goes in (dd)(/dd)</dd>
+</dl>
+	<del>Draws line on Text (del)(/del)</del><br>
+    <p>This is for paragraphs (p)(/p)</p>
+    <i><b>Italizes and makes Bold (i)(b)(/b)(/i)</b></i><br>
+    <small> makes small (small) (/small)</small><br>
+    <big> Makes big (big)(/big)</big><br>
+    <blockquote>Tabs text in and puts space btw top and bottom content(blockquote)(/blockquote)</blockquote>
+    <em>Emphasis (em)(/em)</em><br>
+    &copy; put command together (& copy;) <br>
+    &lt; put command together (& lt;) <br>
+    &gt; put command together (& gt;) <br>
+    &amp; put command together (& amp;) <br>
+    Space put command together (& nbsp;) <br>
+    <ins>Underlines (ins)(/ins)</ins><br>
+    <mark>Highlights (mark)(/mark)</mark><br>
+<div>
+	break command Text continues on another page <br>
+    because of (br) See it needs no closing <br>
+</div>
+
+<h2>CSS Propertiez</h2>
+<ul>
+	<li>background-color</li>
+    <li>color</li>
+    <li>font-family</li>
+    <li>font-size</li>
+    <li>font-style</li>
+    <li>font-weight</li>
+    <li>line-height</li>
+    <li>margin</li>
+    <li>text-align</li>
+    <li>text-decoration</li>
+    <li>width</li>
+    <li>padding</li>
+    <li>#wrapper{}</li>
+</ul>
+
+</main>
+<h2>footer (footer)(/footer)</h2>
+
+<footer>
+Copyright &copy; stuff like this like to go in footer <br>
+(mailto:) command gives you link to native app <br>
+<a href = "mailto:spongebob@ggcmedia.com"> spongebob@ggcmedia.com </a> <br>
+</footer>
+
+</body>
+</html>
