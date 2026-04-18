@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Dice Fragment</title>
+  <link href = "../AndroidProject/andy.png" rel = "icon" type = "image/x-icon">
+
+<style>
+	body
+		{background-color: #333333;
+    	color: #ffffff;
+        height: 100px;}
+   	img 
+    	{width: 300px;
+        height: 500px;}
+    .blue
+    	{color: blue;}
+    nav
+		{color: #993300;
+    	letter-spacing: .1em;
+    	text-align: center;
+    	font-weight: bold;
+    	font-size: 1.5em;
+    	display: block;}
+	nav ul
+		{list-style: none;
+    	margin: 0;}
+	nav li
+		{display: inline-block;
+    	padding: .5em;}
+	nav a
+		{text-decoration: none;
+    	display: block;}
+	nav ul ul
+		{position: absolute;
+    	background-color: #ffffff;
+    	padding: 0;
+    	text-align: left;
+    	display: none;}
+	nav ul ul li
+		{display: block;
+    	border: 1px solid #00005d;
+    	width: 20em;
+    	padding-left: 1em;
+    	margin-left: 0;}
+	nav li:hover ul
+		{display: block;}
+	nav a:link
+		{color: #993300;}
+	nav a:visited
+		{color: #993300;}
+	nav a:hover
+		{color: #993300;}
+    
+    #location, #weather
+    	{display: none;}
+   	
+    #wrapper
+    	{width: 960px;
+    	text-align: center;
+    	margin-left: auto;
+		margin-right: auto;
+		box-shadow: 5px 5px 5px black;
+  		border-width: 3px;
+    	border-style: ridge;
+    	border-color: #993300;
+    	border-radius: 50px;
+    	opacity: 20;
+        background: url(../AndroidProject/andy.png) no-repeat right top,
+                    url(../AndroidProject/andy.png) no-repeat left bottom;
+        background-size: 100px, 100px;}
+        
+	.round
+		{text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;}
+    .round:hover
+    	{background-color: #ddd;
+  		color: black;}
+	.round
+    	{background-color: #993300;
+        border-radius: 50%;}
+        
+</style>
+
+</head>
+<body>
+<div id = "wrapper">
+
+<br>
+<p id = "top"></p>
+<h1>Dice Notation with Fragments</h1>
+<nav>
+	<ul>
+        <li>Projects
+        <ul>
+        <!--
+        	<li><a href = "../AndroidProject/Android.html">Student_Picker (Flutter)</a></li>
+        	<li><a href = "../Enhanced_Pizza_Party/Enhanced_Pizza_Party.html">Enhanced Pizza 
+            Party(Java)</a></li>
+            <li><a href = "../West_Hall_Map_App/West_Hall.html">West Hall Map App (Java)</a></li>
+            -->
+            
+        	<li><a href = "../Enhanced_Dice_Roller/Enhanced_Dice_Roller.html">Enhanced Dice 
+            Roller App (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments/Dice_Fragment.html">Dice Notation 
+            With Fragments (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments_with_Persistence/Dice_Persistence.html">
+            Dice Notation with Fragments with Persistence
+            (Java)</a></li>
+            <li><a href = "../Bounce_Surface_View_Gamification/Bounce_Surface.html">
+            BounceSurface View Gamification (Java)</a></li>
+            <li><a href = "../testing/testing.html">Testing Apps (Java)</a></li>
+        </ul>
+        </li>
+        <li>Objectives
+        <ul>
+        	<li><a a href = "#obj1">Objective 1</a></li>
+            <li><a a href = "#obj2">Objective 2</a></li>
+        	<li><a a href = "#obj3">Objective 3</a></li>
+            <li><a a href = "#obj4">Objective 4</a></li>
+            <li><a a href = "#obj5">Objective 5</a></li>
+            <li><a a href = "#obj6">Objective 6</a></li>
+            <li><a a href = "#obj7">Objective 7</a></li>
+            <li><a a href = "#obj8">Objective 8</a></li>
+            <li><a a href = "#obj9">Objective 9</a></li>
+            <li><a a href = "#obj10">Objective 10</a></li>
+            <li><a a href = "#obj11">Objective 11</a></li>
+        	<li><a a href = "#obj12">Objective 12</a></li>
+        </ul>
+        </li>
+    </ul>
+</nav>
+
+<div>
+<h2>About</h2>
+This is an app designed to show different features possible when making an android app. It makes 
+use of Fragments, Activities, Menus, Intents, Text Views and more.
+
+<h2 id = "obj1">Objective 1</h2>
+<ul>
+<li>Use custom launcher Icon. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n1.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj2">Objective 2</h2>
+<ul>
+<li>no FAB on the onePane configuration. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n2i.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj3">Objective 3</h2>
+<ul>
+<li>Short tapping on a notation in the master list changes the detail view to show the detail 
+fragment. it is shown in its’ own activity when the device is less than 900. (You must demo this 
+in your video). </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n3i.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj4">Objective 4</h2>
+<ul>
+<li>FAB icon changed to a reasonable selection (not the mail envelope!). </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n4.jpg>
+</ul>
+<br><br><br>
+
+<h2 id = "obj5">Objective 5</h2>
+<ul>
+<li>Detail fragment shows notation, roll result and corresponding formula. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n5.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj6">Objective 6</h2>
+<ul>
+<li>Toolbar options include overflow with About … option .</li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n6.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj7">Objective 7</h2>
+<ul>
+<li>twoPane configuration responds to device rotations, reinstating detail fragment with 
+prevailing values. </li>
+<br>
+DEMONSTRATED IN VIDEO
+</ul>
+<br><br><br>
+
+<h2 id = "obj8">Objective 8</h2>
+<ul>
+<li>Toolbar options include ADD option. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n9.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj9">Objective 9</h2>
+<ul>
+<li>Clicking ADD on toolbar presents Dialog fragment. Fragment contains EditText view, Cancel 
+Button and an OK button.</li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n10.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj10">Objective 10</h2>
+<ul>
+<li>Confirmation of the ADD operation for a new notation results in the item being added to the 
+master list. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n11i.PNG>
+<img src = ../Dice_Notation_with_Fragments/n11ii.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj11">Objective 11</h2>
+<ul>
+<li>Within the ADD Dialog, the OK button is enabled when the typed characters are a valid notation
+and it is disabled when the characters are not a valid notation. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n12i.PNG>
+<img src = ../Dice_Notation_with_Fragments/n12ii.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj12">Objective 12</h2>
+<ul>
+<li>Long press on item in the master list results in a dialog fragment which contains a yes/no 
+confirmation of the remove request and Confirmation of the remove notation dialog results in the 
+item being removed from the master list. </li>
+<br>
+<img src = ../Dice_Notation_with_Fragments/n13i.PNG>
+<img src = ../Dice_Notation_with_Fragments/n13ii.PNG>
+<img src = ../Dice_Notation_with_Fragments/n13iii.PNG>
+</ul>
+<br><br><br>
+
+<a class = "blue" href= "#top">Back to top</a>
+<br><br><br><br><br>
+
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="AlterVista - Editor HTML"/>
+  <title>Bounce Surface</title>
+  <link href = "../AndroidProject/andy.png" rel = "icon" type = "image/x-icon">
+
+<style>
+	body
+		{background-color: #333333;
+    	color: #ffffff;
+        height: 100px;}
+   	img 
+    	{width: 300px;
+        height: 500px;}
+    .stretch
+    	{width: 600px;
+        height: 100px;}
+    .blue
+    	{color: blue;}
+    nav
+		{color: #993300;
+    	letter-spacing: .1em;
+    	text-align: center;
+    	font-weight: bold;
+    	font-size: 1.5em;
+    	display: block;}
+	nav ul
+		{list-style: none;
+    	margin: 0;}
+	nav li
+		{display: inline-block;
+    	padding: .5em;}
+	nav a
+		{text-decoration: none;
+    	display: block;}
+	nav ul ul
+		{position: absolute;
+    	background-color: #ffffff;
+    	padding: 0;
+    	text-align: left;
+    	display: none;}
+	nav ul ul li
+		{display: block;
+    	border: 1px solid #00005d;
+    	width: 20em;
+    	padding-left: 1em;
+    	margin-left: 0;}
+	nav li:hover ul
+		{display: block;}
+	nav a:link
+		{color: #993300;}
+	nav a:visited
+		{color: #993300;}
+	nav a:hover
+		{color: #993300;}
+    
+    #location, #weather
+    	{display: none;}
+   	
+    #wrapper
+    	{width: 960px;
+    	text-align: center;
+    	margin-left: auto;
+		margin-right: auto;
+		box-shadow: 5px 5px 5px black;
+  		border-width: 3px;
+    	border-style: ridge;
+    	border-color: #993300;
+    	border-radius: 50px;
+    	opacity: 20;
+        background: url(../AndroidProject/andy.png) no-repeat right top,
+                    url(../AndroidProject/andy.png) no-repeat left bottom;
+        background-size: 100px, 100px;}
+        
+	.round
+		{text-decoration: none;
+		display: inline-block;
+		padding: 8px 16px;}
+    .round:hover
+    	{background-color: #ddd;
+  		color: black;}
+	.round
+    	{background-color: #993300;
+        border-radius: 50%;}
+        
+</style>
+
+</head>
+<body>
+<div id = "wrapper">
+
+<br>
+<p id = "top"></p>
+<h1>Bounce Surface View Gamification</h1>
+<nav>
+	<ul>
+        <li>Projects
+        <ul>
+        <!--
+        	<li><a href = "../AndroidProject/Android.html">Student_Picker (Flutter)</a></li>
+        	<li><a href = "../Enhanced_Pizza_Party/Enhanced_Pizza_Party.html">Enhanced Pizza 
+            Party(Java)</a></li>
+            <li><a href = "../West_Hall_Map_App/West_Hall.html">West Hall Map App (Java)</a></li>
+            -->
+            
+        	<li><a href = "../Enhanced_Dice_Roller/Enhanced_Dice_Roller.html">Enhanced Dice 
+            Roller App (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments/Dice_Fragment.html">Dice Notation 
+            With Fragments (Java)</a></li>
+            <li><a href = "../Dice_Notation_with_Fragments_with_Persistence/Dice_Persistence.html">
+            Dice Notation with Fragments with Persistence
+            (Java)</a></li>
+            <li><a href = "../Bounce_Surface_View_Gamification/Bounce_Surface.html">
+            BounceSurface View Gamification (Java)</a></li>
+            <li><a href = "../testing/testing.html">Testing Apps (Java)</a></li>
+        </ul>
+        </li>
+        <li>Objectives
+        <ul>
+        	<li><a a href = "#obj1">Objective 1</a></li>
+            <li><a a href = "#obj2">Objective 2</a></li>
+        	<li><a a href = "#obj3">Objective 3</a></li>
+            <li><a a href = "#obj4">Objective 4</a></li>
+            <li><a a href = "#obj5">Objective 5</a></li>
+            <li><a a href = "#obj6">Objective 6</a></li>
+        </ul>
+        </li>
+    </ul>
+</nav>
+
+<div>
+<h2>About</h2>
+This app demonstrates the use of threads to seperate task, designing UIs and using in built
+animations
+
+<h2 id = "obj1">Objective 1</h2>
+<ul>
+<li>A radius is selected randomly at construction time, between 50 and 150. </li>
+<br>
+<img src = ../Bounce_Surface_View_Gamification/b1i.PNG>
+<br>
+<img class = "stretch" src = ../Bounce_Surface_View_Gamification/b1ii.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj2">Objective 2</h2>
+<ul>
+<li>A color is picked randomly, where r,g,b are each picked randomly from 0 .. 200. </li>
+<br>
+<img src = ../Bounce_Surface_View_Gamification/b2i.PNG>
+<br>
+<img class = "stretch" src = ../Bounce_Surface_View_Gamification/b2ii.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj3">Objective 3</h2>
+<ul>
+<li>A velocity is picked randomly, between -10 and 10. </li>
+<br>
+<img src = ../Bounce_Surface_View_Gamification/b3i.PNG>
+<br>
+<img class = "stretch" src = ../Bounce_Surface_View_Gamification/b3ii.PNG>
+</ul>
+<br><br><br>
+
+<h2 id = "obj4">Objective 4</h2>
+<ul>
+<li>A random spawn location is picked somewhere on the screen. </li>
+<br>
+<img class = "stretch" src = ../Bounce_Surface_View_Gamification/b4.PNG>
+</ul>
+<br><br><br>
+
+<!--
+<h2 id = "obj5">Objective 5</h2>
+<ul>
+<li>The ball is 'killed', if tapped. </li>
+<br>
+DEMONSTRATED IN VIDEO</ul>
+<br><br><br>
+
+<h2 id = "obj6">Objective 6</h2>
+<ul>
+<li>A new ball is spawned, if the current ball is killed. </li> 
+<br>
+DEMONSTRATED IN VIDEO
+</ul>
+<br><br><br>
+-->
+
+<a class = "blue" href= "#top">Back to top</a>
+<br><br><br><br><br>
+</div>
+</div>
+</body>
+</html>
